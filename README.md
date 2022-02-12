@@ -42,7 +42,7 @@ The current layout of _AMYR_ is as follows:
 
 Version: 0.0.3
 
-* **[core](/libs/amyr-ts-lib/src/lib/libs/core/Readme.md) (core capability for the entire library) - P**
+* **[core](/libs/amyr-ts-lib/src/lib/core/Readme.md) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
 * libs
     * **[ai](/libs/amyr-ts-lib/src/lib/libs/ai/Readme.md) (low-level libs to support various AI applications) - P**
