@@ -40,9 +40,9 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.2
+Version: 0.0.3
 
-* core (core capability for the entire library) - E
+* **[core](/libs/amyr-ts-lib/src/lib/libs/core/Readme.md) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
 * libs
     * **[ai](/libs/amyr-ts-lib/src/lib/libs/ai/Readme.md) (low-level libs to support various AI applications) - P**
