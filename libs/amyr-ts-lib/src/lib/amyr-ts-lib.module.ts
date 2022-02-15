@@ -3,6 +3,15 @@ import { CommonModule } from '@angular/common';
 
 // AMYR EXPORTS
 
+// core/easing
+export * as back from '../lib/core/easing/back';
+export * as bounce from '../lib/core/easing/bounce';
+export * as cubic from '../lib/core/easing/cubic';
+export * as elastic from '../lib/core/easing/elastic';
+export * as exponential from '../lib/core/easing/exponential';
+export * as linear from '../lib/core/easing/linear';
+export * as quadratic from '../lib/core/easing/quadratic';
+
 // models
 export { IGraphics } from './models/graphics';
 

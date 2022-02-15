@@ -34,13 +34,13 @@ What to show your support (with a link to your website or LinkedIn/social media)
 
 # ORGANIZATION
 
-The _AMYR_ library is organized into folders underneath _/libs/anyr-ts-lib/src/lib_.  The currently folder organization mirrors the _Angular Dev Toolkit_, although it will be expanded in the future.  Most of the folders are empty and it will take coffee to fill them :)
+The _AMYR_ library is organized into folders underneath _/libs/anyr-ts-lib/src/lib_.  The current folder organization mirrors the _Angular Dev Toolkit_, although it will be expanded in the future.  Most of the folders are empty and it will take coffee to fill them :)
 
 Each folder has its own Readme file that describes currently available content.  (C) means that code in that folder is complete, meaning on par with the ADT.  (N) means that new content beyond that existing in the ADT has been added to the folder. (P) means partial content (relative to the ADT).  (E) means the folder is currently empty, i.e. ADT code has yet to be moved into _AMYR_.  That requires some more coffee!!
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.3
+Version: 0.0.4
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
@@ -49,11 +49,12 @@ Version: 0.0.3
     * barcode (dynamic barcode creators) - E
     * composable (for FP devotees - single-line, composable functions) - E
     * function-graph (function graphing engine) - E
+    * **[functional-programming](/libs/amyr-ts-lib/src/lib/libs/functional-programming#readme) (compact, pure functions for use in FP applications) - P**
     * kinematics (2D forward/inverse kinematics library) - E
     * lazy-load (lazy-load JS and CSS files) - E
     * **misc (because it doesn't fit anywhere else) - P**
     * paging (libraries to support dynamic paging of content) - E
-    * profiles (libraries supporting operation on mult-valued time-series) - E
+    * profiles (libraries supporting operation on multi-valued time-series) - E
     * search (search functions)
     * **sorting (sort functions) - P**
     * **[TypeScript Math Toolkit](/libs/amyr-ts-lib/src/lib/libs/tsmt/Readme.md) - P**

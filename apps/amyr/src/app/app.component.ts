@@ -5,6 +5,8 @@ import { TSMT$AVLTree } from '@algorithmist/amyr-ts-lib';
 import { TSMT$Queue   } from '@algorithmist/amyr-ts-lib';
 import { AStar        } from '@algorithmist/amyr-ts-lib';
 
+import * as back from '@algorithmist/amyr-ts-lib';
+
 @Component({
   selector: 'algorithmist-root',
   templateUrl: './app.component.html',

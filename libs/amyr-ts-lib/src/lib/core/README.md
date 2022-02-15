@@ -8,6 +8,13 @@ The _core_ folder structure is documented below. (C) means that code in that fol
 - **easing (easing equations) - C**
 - shapes (virtual drawing of various shapes) - E
 
+## Imports
+
+Import easing functions using the _@algorithmist_ namespace.  For example,
+
+```
+import * as back from '@algorithmist/amyr-ts-lib';
+```
 
 ## drawing
 

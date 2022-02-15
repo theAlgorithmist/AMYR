@@ -30,7 +30,7 @@
  * Inspired by: http://robertpenner.com/easing/, although the fundamental structure of such equations dates
  * back to the 1970's (IEEE white papers).
  *
- * Usage: import * as exponential from {@algorithmist/<relative-path>/exponential}
+ * Usage: import * as exponential from '@algorithmist/amyr-ts-lib'
  * .
  * .
  * .
