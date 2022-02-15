@@ -12,6 +12,20 @@ export * as exponential from '../lib/core/easing/exponential';
 export * as linear from '../lib/core/easing/linear';
 export * as quadratic from '../lib/core/easing/quadratic';
 
+// FP functions
+export {
+  dynamicFilter,
+  reverseFilter,
+  dynamicXform,
+  extendedReducer,
+  hasAny,
+  hasNone,
+  partition,
+  cache,
+  PredicateFunction,
+  XformFunction
+} from "./libs/functional-programming/higher-order";
+
 // models
 export { IGraphics } from './models/graphics';
 
