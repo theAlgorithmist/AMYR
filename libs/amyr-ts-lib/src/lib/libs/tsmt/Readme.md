@@ -46,3 +46,36 @@ TSMT folder structure is documented below. (C) means that code in that folder is
   - Tree (General Tree)
   - Trie (Aho-Corasick double-array Trie)
 
+## Expression Engine
+
+  - Empty
+
+## Decorators
+
+  - Empty
+
+## Function Parser
+
+  - Empty
+
+## Geometry
+
+  - Empty
+
+## Graphing
+
+  - Empty
+
+## Item Allocation
+
+  - Empty
+
+## Math
+
+ - derivative (Several methods for numerically evaluating first derivatives)
+ - matrix (General Matrix class with LU factorization and linear system solution)
+ - neville (Implementation of Neville's Method for interpolation)
+ - prime-factorization (Prime Factorization algorithm for modest-sized integers)
+ - quaternion (General operations on Quaternions)
+ - repeat-to-frace (Repeating decimal to fracitonal form)
+

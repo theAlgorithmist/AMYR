@@ -104,6 +104,21 @@ export { TSMT$TreeNode     } from './libs/tsmt/datastructures/tree-node';
 export { TSMT$Tree         } from './libs/tsmt/datastructures/tree';
 export { TSMT$Trie         } from './libs/tsmt/datastructures/trie';
 
+// TSMT Math
+export { FcnEval                 } from "./models/fcn-eval";
+export { TSMT$Derivative         } from "./libs/tsmt/math/derivative";
+export { TSMT$Matrix             } from "./libs/tsmt/math/matrix";
+export { nevilleInterpolate      } from "./libs/tsmt/math/neville";
+export { TSMT$PrimeFactorization } from "./libs/tsmt/math/prime-factorization";
+export {
+  Quaterion,
+  TSMT$Quaternion
+} from "./libs/tsmt/math/quaternion";
+export {
+  SimpleFraction,
+  repeatToFraction
+} from "./libs/tsmt/math/repeat-to-frac";
+
 // lib/libs/ai/interfaces
 export { CELL_TYPE } from './libs/ai/pathfinding/interfaces/cell-type';
 export { Grid2D    } from './libs/ai/tiles/grid-2d';
