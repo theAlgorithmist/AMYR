@@ -1,6 +1,6 @@
 {
   "name": "algorithmist",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "Apache-2.0",
   "scripts": {
     "ng": "nx",
@@ -12,6 +12,8 @@
     "test:ai:astar:graph": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/ai/test/pathfinding/astar-graph.spec.ts",
     "test:ai:astar:heap": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/ai/test/pathfinding/astar-heap.spec.ts",
     "test:ai:astar:waypoint": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/ai/test/pathfinding/astar-waypoint.spec.ts",
+    "test:expression-engine": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/expression-engine/test/expression-engine.spec.ts",
+    "test:function-parser": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/function-parser/test/function-parser.spec.ts",
     "test:libs:fp": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/functional-programming/test/fp.spec.ts",
     "test:libs:sort": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/sorting/test/sort.spec.ts",
     "test:tsmt:array-deque": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/array-deque/array-deque.spec.ts",

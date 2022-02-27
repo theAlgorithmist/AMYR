@@ -12,6 +12,18 @@ export * as exponential from '../lib/core/easing/exponential';
 export * as linear from '../lib/core/easing/linear';
 export * as quadratic from '../lib/core/easing/quadratic';
 
+export {
+  expressionValue,
+  expressionOperand,
+  ExpressionFcn,
+  ExpressionEngine
+} from "./libs/expression-engine/expression-engine";
+
+export {
+  NumericFcn,
+  FunctionParser
+} from "./libs/function-parser/function-parser";
+
 // FP functions
 export {
   dynamicFilter,

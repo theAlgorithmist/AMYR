@@ -40,7 +40,7 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.5
+Version: 0.0.6
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
@@ -48,7 +48,9 @@ Version: 0.0.5
     * **[ai](/libs/amyr-ts-lib/src/lib/libs/ai/Readme.md) (low-level libs to support various AI applications) - P**
     * barcode (dynamic barcode creators) - E
     * composable (for FP devotees - single-line, composable functions) - E
+    * **expression-engine (evaluate general expressions in infix notation - return number/string/boolean) - C**
     * function-graph (function graphing engine) - E
+    * **function-parser (parse and evaluate functions of multiple variables in infix notation) - C**
     * **[functional-programming](/libs/amyr-ts-lib/src/lib/libs/functional-programming#readme) (compact, pure functions for use in FP applications) - P**
     * kinematics (2D forward/inverse kinematics library) - E
     * lazy-load (lazy-load JS and CSS files) - E
