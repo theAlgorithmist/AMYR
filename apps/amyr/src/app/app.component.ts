@@ -7,6 +7,8 @@ import { AStar        } from '@algorithmist/amyr-ts-lib';
 
 import * as back from '@algorithmist/amyr-ts-lib';
 
+import { FiniteStateMachine } from "@algorithmist/amyr-ts-lib";
+
 @Component({
   selector: 'algorithmist-root',
   templateUrl: './app.component.html',
@@ -27,5 +29,7 @@ export class AppComponent
     this._queue = new TSMT$Queue<number>();
 
     this._astar = new AStar();
+
+    const fsm: FiniteStateMachine<unknown> = new FiniteStateMachine<unknown>();
   }
 }

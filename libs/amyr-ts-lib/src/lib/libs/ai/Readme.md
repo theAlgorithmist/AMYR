@@ -18,7 +18,20 @@ The AI folder structure is documented below. (C) means that code in that folder 
   - Empty
 
 ## Finite State Machine
-  - Empty
+
+The Reactive, data-driven Finite State Machine provides a simple API for both imperative and data-driven constructions of Finite State Machines.
+
+_Observers_ may be created and assigned to the machine in order to take specific action when the machine reaches a particular state.
+
+Both Moore and Mealy-style machines can be constructed.
+
+See specs in the _test_ folder for detailed information on how to create and manipulate Finite State Machines.
+
+To run tests,
+
+```
+npm run test:ai:fsm
+```
 
 ## Optimize
   - Empty    
@@ -33,6 +46,15 @@ The AI folder structure is documented below. (C) means that code in that folder 
   - astar-min-heap (a min-heap optimized for use in A*)
   - astar-waypoint (implementation of an A* waypoint)
   - astar (implements the A* algorithm for 2D waypoints)
+
+To run tests,
+
+```
+npm run test:ai:astar
+npm run test:ai:astar:graph
+npm run test:ai:astar:heap
+npm run test:ai:astar:waypoint
+```
 
 ## Rules Engine
   - empty

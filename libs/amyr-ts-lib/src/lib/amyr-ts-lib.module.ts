@@ -40,6 +40,14 @@ export {
 
 // models
 export { IGraphics } from './models/graphics';
+export { DecisionTreeAction } from "./models/decision-tree-action";
+export {
+  FSMState,
+  FSMStateOutput,
+  StateMachineDefinition,
+  StateTransition,
+  transFunction
+} from "./models/state-machine-models";
 
 // /lib/enumerations
 export { TREE_COLOR_ENUM } from './enumerations/tree-color-enum';
@@ -54,6 +62,9 @@ export {
 
 // /lib/libs/sorting
 export { sortOn } from './libs/sorting/sort-on';
+
+// Finite State Machine
+export { FiniteStateMachine } from "./libs/ai/finite-state-machine/finite-state-machine";
 
 // /lib/tsmt/datastructures
 export { TSMT$BTreeUtils } from './libs/tsmt/datastructures/utils/b-tree-utils';
