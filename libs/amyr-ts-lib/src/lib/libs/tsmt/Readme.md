@@ -54,13 +54,11 @@ TSMT folder structure is documented below. (C) means that code in that folder is
 
   - Empty
 
-## Function Parser
-
-  - Empty
-
 ## Geometry
 
-  - Empty
+  point - **PlanarPoint** class.  Representation of and computations on points in the plane.
+
+  polygon - **Polygon** class. A general, two-dimensional (closed) polygon class.  Supports centroid computations, translation, and scaling about the centroid.
 
 ## Graphing
 
@@ -78,4 +76,32 @@ TSMT folder structure is documented below. (C) means that code in that folder is
  - prime-factorization (Prime Factorization algorithm for modest-sized integers)
  - quaternion (General operations on Quaternions)
  - repeat-to-frace (Repeating decimal to fracitonal form)
+
+## Utils
+
+General utilities, including
+
+- approx-equals (compare two numbers for approximate equality)
+- array-functions (single-line fcns for string and array computations)
+- balanced-parens (are parentheses balanced in a string expression)
+- bisect (root-isolation by interval biscetion for a function of a single variable)
+- circle-utility-functions (comprehensive set of functions for circle-related computations)
+- compare-utils (a small set of comparision utilities)
+- cubic-roots (estimate roots of a cubic function of a single variable)
+- gauss (Gaussian Quadrature)
+- geom-utils (comprehensive set of functions for general planar geometry computations)
+- halley (estimate roots of a function of a single variable by Halley's method)
+- limits (some useful numerical constants)
+- linear-interp (general linear interpolation and extrapolation)
+- math-utils (a small, but growing set of math utilities)
+- newton (estimate roots of a function of a single variable by Newton's method)
+- number-formatter (a comprehensive set of functions for number formatting)
+- point-utils (a comprehensive set of functions for computations on planar points)
+- polygon-utils (commonly used functions for operations on polygons)
+- quick-select (a TypeScript port of theJavascript quick-select, [https://www.npmjs.com/package/quickselect](https://www.npmjs.com/package/quickselect))
+- solve-2x2 (quick solution of 2x2 systems of linear equations)
+- str-equals (string compare from a starting position)
+- string-utils (general string utility functions)
+- to-number (format a string to a number)
+- twbrf (TypeScript port of Jack Crenshaw's Worlds Best Root Finder)
 

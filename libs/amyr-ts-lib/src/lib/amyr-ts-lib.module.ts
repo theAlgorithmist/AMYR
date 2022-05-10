@@ -142,6 +142,67 @@ export {
   repeatToFraction
 } from "./libs/tsmt/math/repeat-to-frac";
 
+export {
+  DEFAULT_PHONE,
+  INVALID_NUMBER
+} from "./models/numeric";
+
+export { PlanarPoint } from "./libs/tsmt/geometry/point";
+export { Polygon     } from "./libs/tsmt/geometry/polygon";
+
+export { compareNumbers } from "./libs/tsmt/utils/approx-equal";
+export { isBalanced     } from "./libs/tsmt/utils/balanced-parens";
+export { bisect         } from "./libs/tsmt/utils/bisect";
+
+export {
+  containsApproximately,
+  vectorCompare,
+  compareToDigits
+} from "./libs/tsmt/utils/compare-utils";
+
+export { CubicRoots          } from "./libs/tsmt/utils/cubic-roots";
+export { Gauss               } from "./libs/tsmt/utils/gauss";
+export { halleyRoot          } from "./libs/tsmt/utils/halley";
+export { LinearInterpolation } from "./libs/tsmt/utils/linear-interp";
+
+export {
+  lcm,
+  gcd
+} from "./libs/tsmt/utils/math-utils";
+
+export { Newton    } from "./libs/tsmt/utils/newton";
+export { solve2x2  } from "./libs/tsmt/utils/solve-2x2";
+export { strEquals } from "./libs/tsmt/utils/str-equals";
+export { Timer     } from "./libs/tsmt/utils/timer";
+export { toNumber  } from "./libs/tsmt/utils/to-number";
+export { twbrf     } from "./libs/tsmt/utils/twbrf";
+
+export * from './libs/tsmt/utils/array-functions';
+export * from './libs/tsmt/utils/circle-utility-functions';
+export * from './libs/tsmt/utils/geom-utils';
+export * from './libs/tsmt/utils/limits';
+export * from './libs/tsmt/utils/number-formatter';
+export * from './libs/tsmt/utils/point-utils';
+export * from './libs/tsmt/utils/polygon-utils';
+export * from './libs/tsmt/utils/string-utils';
+
+export {
+  Point,
+  Interval,
+  NEWS,
+  ProjectFromTo,
+  Projection,
+  SegmentIntersection,
+  Rect,
+  DirEnum,
+  Vertices,
+  IntersectionPoints,
+  ZERO_TOL,
+  ROOT_ITER_LIMIT,
+  RAD_TO_DEG,
+  Ranges
+} from "./models/geometry";
+
 // lib/libs/ai/interfaces
 export { CELL_TYPE } from './libs/ai/pathfinding/interfaces/cell-type';
 export { Grid2D    } from './libs/ai/tiles/grid-2d';

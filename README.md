@@ -20,7 +20,7 @@ So, please [buy a cup (or two ... or three) today](https://ko-fi.com/thealgorith
 
 # CORPORATE SPONSORS
 
-Want to showcase your company (with a link back) as a supported of _AMYR_?  All it takes is 50 cups to get your name in lights and show your support in a major way.  Your input in terms of library direction also carries the most weight in terms of subsequent releases. 
+Want to showcase your company (with a link back here and on my LinkedIn) as a supported of _AMYR_?  All it takes is 50 cups to get your name in lights and show your support in a major way.  Your input in terms of library direction also carries the most weight in terms of subsequent releases. 
 
 # INDIVIDUAL SPONSORS
 
@@ -40,7 +40,7 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.7
+Version: 0.0.8
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E

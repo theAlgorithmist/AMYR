@@ -9,6 +9,8 @@ import * as back from '@algorithmist/amyr-ts-lib';
 
 import { FiniteStateMachine } from "@algorithmist/amyr-ts-lib";
 
+import { pointIsOnLine } from "@algorithmist/amyr-ts-lib";
+
 @Component({
   selector: 'algorithmist-root',
   templateUrl: './app.component.html',
