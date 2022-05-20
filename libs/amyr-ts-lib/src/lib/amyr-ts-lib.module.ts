@@ -105,7 +105,9 @@ export {
   EqualFcn,
   Point2D,
   PointNode,
-  RTreeNode
+  RTreeNode,
+  isPoint2D,
+
 } from './libs/tsmt/datastructures/r-tree';
 export {
   gatherChildren,
@@ -231,6 +233,20 @@ export {
 } from './libs/ai/pathfinding/astar-waypoint';
 
 export { AStar } from './libs/ai/pathfinding/astar';
+
+export { grahamScan } from "./libs/tsmt/geometry/hulls/convex-hull";
+
+export {
+  fastConvexHull,
+  concaveHull,
+  QueueNode
+} from "./libs/tsmt/geometry/hulls/concave-hull";
+
+export { Line } from "./libs/tsmt/geometry/planar/line";
+
+export * from "./models/planar-curve-model";
+
+export { PlanarCurve } from "./libs/tsmt/geometry/planar/planar-curve";
 
 @NgModule({
   imports: [CommonModule],

@@ -30,7 +30,7 @@ import { compareNumbers } from "./approx-equal";
  *
  * @param {Point} p0 First point
  *
- * @param {Ponit} p1 Second point
+ * @param {Point} p1 Second point
  */
  export function l2Norm(p0: Point, p1: Point): number
  {
@@ -382,3 +382,34 @@ import { compareNumbers } from "./approx-equal";
 
    return {x: px, y:py};
  }
+
+/**
+ * Are two points equal (within tolerance)?
+ *
+ * @param a First point for comparison
+ *
+ * @param b Second point for comparison
+ */
+export function areEqual(a: Point, b: Point): boolean
+{
+  if (Math.abs(a.x - b.x) <= 0.00001) return Math.abs(a.y - b.y) <= 0.00001;
+
+  return false;
+}
+
+/**
+ * Are the three points ordered CW (returns positive), CCW (returns negative), or co-linear (returns zero)
+ *
+ * @param {Point} p1 First Point
+ *
+ * @param {Point} p2 Second Point
+ *
+ * @param {Point} p3 Third Point
+ */
+export function orientation(p1: Point, p2: Point, p3: Point)
+{
+  const value: number = (p2.y - p1.y) * (p3.x - p2.x) - (p3.y - p2.y) * (p2.x - p1.x);
+  return Math.abs(value) < 0.000001 ? 0 : value;
+}
+
+

@@ -22,6 +22,7 @@
     "test:tsmt:disjoint-set": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/disjoint-set/disjointset.spec.ts",
     "test:tsmt:graph": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/graph/graph.spec.ts",
     "test:tsmt:heap": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/heap/heap.spec.ts",
+    "test:tsmt:hulls": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/geometry/hulls.spec.ts",
     "test:tsmt:list": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/list/list.spec.ts",
     "test:tsmt:math": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/math/math.spec.ts",
     "test:tsmt:pqueue": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/pqueue/pqueue.spec.ts",
@@ -46,6 +47,7 @@
     "@angular/router": "~13.1.0",
     "@nrwl/angular": "13.4.3",
     "rxjs": "~7.4.0",
+    "tinyqueue": "2.0.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },
