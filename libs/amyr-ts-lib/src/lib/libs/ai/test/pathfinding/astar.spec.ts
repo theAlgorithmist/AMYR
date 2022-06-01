@@ -91,7 +91,7 @@ describe('A* Pathfinding Tests', () => {
     expect(waypoints[1].equals(w2)).toBe(true);
   });
 
-  it('general graph test #1', function() {
+  it('utils graph test #1', function() {
     const astar: AStar      = new AStar();
     const graph: AStarGraph = new AStarGraph();
 

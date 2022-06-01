@@ -15,7 +15,7 @@
  */
 
 /**
- * AMYR Library Expression Engine. Parse and evaluate simple numerical and general boolean expressions in infix notation.
+ * AMYR Library Expression Engine. Parse and evaluate simple numerical and utils boolean expressions in infix notation.
  * An expression may return a number or a boolean.
  *
  * Example: x + 1 or x + 1 < 100

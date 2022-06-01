@@ -466,7 +466,7 @@ import { compareNumbers } from "./approx-equal";
    }
 
   /**
-   * Intersection point of infinite lines between two segments.  This is NOT a general-purpose line-intersection method.
+   * Intersection point of infinite lines between two segments.  This is NOT a utils-purpose line-intersection method.
    * It is intended to be a fast algorithm for well-posed data, i.e. segments are not co-linear or overlapping, and point
    * data is well-defined.  There are no tests for bad data or outlier conditions.
    *

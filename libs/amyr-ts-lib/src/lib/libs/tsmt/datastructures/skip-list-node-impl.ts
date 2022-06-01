@@ -1,4 +1,4 @@
-﻿/** 
+﻿/**
  * Copyright 2017 Jim Armstrong (www.algorithmist.net)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@
  * Typescript Math Toolkit: Concrete (and cloneable) implementation of the TSMT$ISkipListNode interface.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -27,7 +27,7 @@ import {TSMT$ISkipListData} from "./skip-list-node";
 
 export class TSMT$SkipListNode implements TSMT$ISkipListNode
 {
-  public key: string;                     // general key or id for this node
+  public key: string;                     // utils key or id for this node
   public value: number;                    // node value (in future will likely be an IComparable)
   public aux: object;                      // auxiliary data associated with this node
   public level: number;                    // used for level-related optimization

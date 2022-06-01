@@ -23,7 +23,7 @@
  *
  * Note that there are more efficient methods for computing the Euclidean MST, but the number of nodes is expected
  * to be sufficiently small that actual run-time will be more than adequate for a higher complexity, but simpler to
- * implement (and general) MST.
+ * implement (and utils) MST.
  *
  * This is a convenience class that provides computations in a package that is optimized for performance.  As such,
  * mutability of internal structures is possible.  Expected use-case for this class is an assign-once, compute-once
@@ -443,7 +443,7 @@ export class TSMT$SimpleGraph
   }
 
   /**
-   * Return a preorder traversal of a general tree of nodes
+   * Return a preorder traversal of a utils tree of nodes
    *
    * @param {TSMT$INode} node Root node
    */
@@ -679,7 +679,7 @@ export class TSMT$SimpleGraph
     // triangle of the connectivity matrix between all nodes.  Note that there is a better way to do this for
     // larger problems (but more difficult to follow) and it may be included in a future update.  This is a
     // reasonable starting point for most interactive applications, since n will be relatively small.  It also
-    // allows this class to serve as a general Graph class with MST as a separate concern.
+    // allows this class to serve as a utils Graph class with MST as a separate concern.
     //
     // For more on the Euclidean minimum spanning tree: https://en.wikipedia.org/wiki/Euclidean_minimum_spanning_tree
 

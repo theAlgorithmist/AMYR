@@ -1,4 +1,4 @@
-﻿/** 
+﻿/**
  * Copyright 2016 Jim Armstrong (www.algorithmist.net)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,13 +15,13 @@
  */
 
 /**
- * Typescript Math Toolkit: Minimal implementation of a general tree node.  Node id and value are the typical differentiators
+ * Typescript Math Toolkit: Minimal implementation of a utils tree node.  Node id and value are the typical differentiators
  * of tree nodes, so ensure that all nodes have a unique id and a value assigned before adding them to a tree.  Node
  * children may be either ordered by value or maintained in the order they were added.  Node data is intended to be {number},
  * {string}, or a simple {object}.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -98,14 +98,14 @@ export class TSMT$TreeNode<T>
    public set ordered(value: boolean)
    {
      this._ordered = value === true ? true : false;
- 
+
      if (this._ordered && this._children > 0)
      {
        // update bounds
        this.__getBounds();
      }
    }
-   
+
   /**
    * Access the number of children for this node
    */
@@ -211,12 +211,12 @@ export class TSMT$TreeNode<T>
   }
 
   /**
-   * Access node data. 
+   * Access node data.
    */
   public get data(): T
   {
     if (Object.prototype.toString.call(this._data) == "[object Object]") return JSON.parse(JSON.stringify(this._data));
-  
+
     return this._data;
   }
 
@@ -228,11 +228,11 @@ export class TSMT$TreeNode<T>
    public set data(value: T)
    {
      if (value == null || value == undefined) return;
- 
+
      if (typeof value == "object") this._data = JSON.parse(JSON.stringify(value));
 
      this._data = value;
-   }    
+   }
 
  /**
   * Access a direct reference to this node's parent
@@ -494,8 +494,8 @@ export class TSMT$TreeNode<T>
   }
 
   /**
-   * Delete the child in this node's child list with the specified id.  This method returns a feference to a node in the child list 
-   * that will be deleted from that list; it is the caller's responsibility to clear the node if it will no longer be needed.  Otherwise, 
+   * Delete the child in this node's child list with the specified id.  This method returns a feference to a node in the child list
+   * that will be deleted from that list; it is the caller's responsibility to clear the node if it will no longer be needed.  Otherwise,
    * the node's child list and hierarchy remains intact.  Returns {null} if no node in the child list is found with a matching id.
    *
    * @param {string} id Node id
@@ -551,7 +551,7 @@ export class TSMT$TreeNode<T>
   }
 
   /**
-   * Compare two tree nodes, generally for the purpose of determining a traversal direction.  Returns 0 if the current node 
+   * Compare two tree nodes, generally for the purpose of determining a traversal direction.  Returns 0 if the current node
    * value is less than the input node value and 1 otherwise, which doubles as a search direction.
    *
    * @param {T} node Reference to an input node for comparison
@@ -564,8 +564,8 @@ export class TSMT$TreeNode<T>
   }
 
   /**
-   * Compare two binary tree nodes for less than, equal to, or greater than in value.  Returns -1 if the current node value is 
-   * less than the input node, 0 if equal, and and 1 if greater; note that nodes with numerical values may be require and approx-equal 
+   * Compare two binary tree nodes for less than, equal to, or greater than in value.  Returns -1 if the current node value is
+   * less than the input node, 0 if equal, and and 1 if greater; note that nodes with numerical values may be require and approx-equal
    * comparison which could be implemented in a future version.
    *
    * @param {T} node Reference to an input node for comparison

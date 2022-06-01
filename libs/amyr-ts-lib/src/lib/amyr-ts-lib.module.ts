@@ -248,6 +248,12 @@ export * from "./models/planar-curve-model";
 
 export { PlanarCurve } from "./libs/tsmt/geometry/planar/planar-curve";
 
+export { Circle       } from "./libs/tsmt/geometry/circle";
+export { createCircle } from "./libs/tsmt/geometry/utils/circle-factory";
+
+export { QuadBezier  } from "./libs/tsmt/geometry/planar/quad-bezier";
+export { CubicBezier } from "./libs/tsmt/geometry/planar/cubic-bezier";
+
 @NgModule({
   imports: [CommonModule],
 })

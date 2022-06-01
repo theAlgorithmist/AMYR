@@ -18,7 +18,7 @@
  * Typescript Math Toolkit: Graph Node.  A default node has an id of zero and null value.  ID is typically assigned
  * post-construction and is expected to be zero or greater.  Nodes are part of a doubly-linked list and expose 'previous'
  * and 'next' pointers.  This node may be the head of a doubly-linked list of graph arcs, which is accessible through
- * a class accessor.  TSMT Graph Nodes and Arcs are constituents of a general graph.
+ * a class accessor.  TSMT Graph Nodes and Arcs are constituents of a utils graph.
  *
  * @author Jim Armstrong (www.algorithmist.net)
  *
@@ -290,7 +290,7 @@ export class TSMT$GraphNode<T>
 
       a = a.next;
     }
-      
+
     return found ? a : null
   }
 
@@ -401,7 +401,7 @@ export class TSMT$GraphNode<T>
 
       arc = arc.next as TSMT$GraphArc<T>;
     }
-      
+
     this._arcList = null;
   }
 }

@@ -166,7 +166,7 @@ describe('Convex Hull, Graham Scan', () => {
     expect(point.y).toEqual(4);
   });
 
-  it ('general test', function() {
+  it ('utils test', function() {
     const hull: Array<Point> = grahamScan(CH_POINTS);
 
     expect(hull.length).toEqual(4);
@@ -190,7 +190,7 @@ describe('Convex Hull, Graham Scan', () => {
     expect(point.y).toEqual(4);
   });
 
-  it ('general test 2', function() {
+  it ('utils test 2', function() {
     const hull: Array<Point> = grahamScan(CH_POINTS_1);
 
     expect(hull.length).toEqual(4);
@@ -214,7 +214,7 @@ describe('Convex Hull, Graham Scan', () => {
     expect(point.y).toEqual(3);
   });
 
-  it ('general test 3', function() {
+  it ('utils test 3', function() {
     const hull: Array<Point> = grahamScan(CH_POINTS_2);
 
     expect(hull.length).toEqual(7);
@@ -324,25 +324,25 @@ describe('Concave Hull', () => {
     expect(point[1]).toEqual(6);
   });
 
-  it('general test #1', function() {
+  it('utils test #1', function() {
     const hull: Array<Point2D> = concaveHull(POINTS_1);
 
     expect(vectorCompareExact(hull, CORRECT_1)).toBe(true);
   });
 
-  it('general test #2', function() {
+  it('utils test #2', function() {
     const hull: Array<Point2D> = concaveHull(POINTS_2);
 
     expect(vectorCompareExact(hull, CORRECT_2)).toBe(true);
   });
 
-  it('general test #3', function() {
+  it('utils test #3', function() {
     const hull: Array<Point2D> = concaveHull(POINTS_3);
 
     expect(vectorCompareExact(hull, CORRECT_3)).toBe(true);
   });
 
-  it('general test #4', function() {
+  it('utils test #4', function() {
     const hull: Array<Point2D> = concaveHull(POINTS_4);
 
     expect(vectorCompareExact(hull, CORRECT_4)).toBe(true);

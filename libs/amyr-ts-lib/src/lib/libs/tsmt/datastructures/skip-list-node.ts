@@ -1,4 +1,4 @@
-﻿/** 
+﻿/**
  * Copyright 2017 Jim Armstrong (www.algorithmist.net)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,13 +19,13 @@
  * the list is doubly-linked at each level for added flexibility.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
 export interface TSMT$ISkipListNode
 {
-  key: string;                       // general key or id for this node
+  key: string;                       // utils key or id for this node
   value: number;                     // node value (in future will likely be an IComparable)
   aux: object;                       // some auxiliary data that is store with the node
   level?: number;                    // optional level number (zero-based) that can be used for level-related optimization
@@ -45,7 +45,7 @@ export interface TSMT$ISkipListNode
  */
 export interface TSMT$ISkipListData
 {
-  key: string;                // general key or id for this node
+  key: string;                // utils key or id for this node
   value: number;              // node value (in future will likely be an IComparable)
   aux: object;                // some auxiliary data that is store with the node
 

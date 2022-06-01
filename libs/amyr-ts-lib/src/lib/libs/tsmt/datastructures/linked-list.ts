@@ -1,4 +1,4 @@
-/** 
+/**
  * Copyright 2016 Jim Armstrong
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +15,11 @@
  */
 
 /**
- * Typescript Math Toolkit: Linked List.  A general (singly, doubly, or ciruclar) linked list of TSMT$ListNodes.  Defaults to single linked list.
+ * Typescript Math Toolkit: Linked List.  A utils (singly, doubly, or ciruclar) linked list of TSMT$ListNodes.  Defaults to single linked list.
  * In order to support fast list operations, immutability is not enforced.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
  import { TSMT$ListNode } from './list-node';
@@ -42,7 +42,7 @@
 
    // (index) search parameters
    protected _start = 0;
-   protected _end   = 0;  
+   protected _end   = 0;
    protected _dir   = 1;
 
    constructor()
@@ -74,7 +74,7 @@
    public get type(): number
    {
      return this._type;
-   } 
+   }
 
   /**
    * Assign the list type for valid values, otherwise list type remains unchanged.  A type change automatically alters the current linkage.
@@ -208,10 +208,10 @@
    *
    * @param {object} data Node data
    *
-   * @param {boolean} isTerminal True if this is to be the final node in the list.  If so, no new nodes may be added onto the end and this node may not be deleted.  
+   * @param {boolean} isTerminal True if this is to be the final node in the list.  If so, no new nodes may be added onto the end and this node may not be deleted.
    * Call the clear method to clear out the list.
    */
-   public add(id: string, data: object, isTerminal: boolean=false): void 
+   public add(id: string, data: object, isTerminal: boolean=false): void
    {
      if (this._tail && this._tail.isSentinel)
        return;
@@ -237,11 +237,11 @@
      }
 
      (this._tail as TSMT$ListNode).next = node;
- 
+
      switch (this._type)
      {
        case LinkedListType.DOUBLE:
-         node.prev = this._tail;  
+         node.prev = this._tail;
        break;
 
        case LinkedListType.CIRCULAR:
@@ -258,7 +258,7 @@
      {
        (this._head as TSMT$ListNode).clearRefs();
        (this._head as TSMT$ListNode).next = this._tail;
-     } 
+     }
 
      this._count++;
    }
@@ -297,7 +297,7 @@
      if (index == 0)
      {
        node.next  = this._head;
-       
+
        if (this._type == LinkedListType.DOUBLE)
          (this._head as TSMT$ListNode).prev = node;
        else if (this._type == LinkedListType.CIRCULAR)
@@ -311,7 +311,7 @@
        return;
      }
 
-     // in-between cases     
+     // in-between cases
      index = index % this._count;
 
      const before: TSMT$ListNode = this.getNode(index-1) as TSMT$ListNode;
@@ -333,7 +333,7 @@
 
   /**
    * Remove a node from the list at the specified index
-   * 
+   *
    * @param {number} index Node index, which should be in the interval [0,size-1] unless the list is circular in which case indices are mod(size)
    */
    public remove(index: number): void
@@ -364,7 +364,7 @@
          // note that count-2 will be invalid for a list of length 1, but getNode() returns null which is the desired result (and we should not take
          // this path through the if-then-else anyway)
          this._tail             = this._type == LinkedListType.DOUBLE ? (this._tail as TSMT$ListNode).prev : this.getNode(this._count-2);
-       
+
          if (this.type == LinkedListType.CIRCULAR && this._tail)
            this._tail.next = this._head;
 
@@ -373,14 +373,14 @@
          node.clear();
        }
      }
-     else 
+     else
      {
        const node: TSMT$ListNode  = this.getNode(index-1) as TSMT$ListNode;
        const node1: TSMT$ListNode = node.next as TSMT$ListNode;
        const node2: TSMT$ListNode = node1.next as TSMT$ListNode;
 
        node.next = node2;
-       
+
        if (this._type == LinkedListType.DOUBLE) node1.prev = node;
      }
 
@@ -404,7 +404,7 @@
 
   /**
    * Convert the list to an Array.   This can be used to create a list with a variety of operations and then repeatedly access
-   * the unaltered list with O(1) index operations (provided space efficiency is not a concern).  It may also be used to convert 
+   * the unaltered list with O(1) index operations (provided space efficiency is not a concern).  It may also be used to convert
    * the list to a stack (using array operations to manipulate the stack)
    *
    * @param {boolean} nullRef True if previous and next references are to be nulled out for each node.  This is useful if the resulting array is to be subsequently
@@ -458,10 +458,10 @@
        }
      }
 
-     this._count = 0; 
-     this._head  = null; 
-     this._tail  = null; 
-     
+     this._count = 0;
+     this._head  = null;
+     this._tail  = null;
+
      this.__noCache();
    }
 
@@ -480,11 +480,11 @@
 
      let node: TSMT$ListNode = this._head as TSMT$ListNode;
      let i: number;
-    
+
      for (i=0; i<this._count-1; ++i)
-     { 
+     {
        node.prev = null;
-       node      = node.next as TSMT$ListNode; 
+       node      = node.next as TSMT$ListNode;
      }
 
      (this._tail as TSMT$ListNode).prev = null;
@@ -500,9 +500,9 @@
      let before: TSMT$ListNode      = this._head as TSMT$ListNode;
      let node: TSMT$ListNode | null = null;
      let i: number;
-    
+
      for (i=1; i<this._count-1; ++i)
-     { 
+     {
        node      = before.next as TSMT$ListNode;
        node.prev = before;
        before    = node;
@@ -522,7 +522,7 @@
        this._end   = index;
        this._dir   = 1;
 
-       return (index > this._index && this._node != null) ? this._node.next : this._head; 
+       return (index > this._index && this._node != null) ? this._node.next : this._head;
      }
      else
      {
@@ -540,7 +540,7 @@
        {
          path1 = false;
          path2 = false;
-       } 
+       }
 
        const d4: number     = index < this._index ? this._index - index : Number.MAX_VALUE;
        const path4: boolean = (d4 < d3) && (d4 < d2) && (d4 < d1);

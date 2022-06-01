@@ -409,7 +409,7 @@ describe('Trie Tests', () => {
     expect(trie.contains('baby')).toBe(true);
   });
 
-  it('general word insert', function() {
+  it('utils word insert', function() {
     trie.clear();
 
     trie.insert('bachelor');

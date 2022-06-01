@@ -15,7 +15,7 @@
  */
 
 /**
- * AMYR Library: Low-level, general mathematical utility functions
+ * AMYR Library: Low-level, utils mathematical utility functions
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *

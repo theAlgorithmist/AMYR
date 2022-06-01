@@ -1,4 +1,4 @@
-/** 
+/**
  * Copyright 2016 Jim Armstrong (www.algorithmist.net)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,7 @@
 
 /**
  * Typescript Math Toolkit: Skip list.  This version uses a simple probability model (coin flip) to decide
- * whether or not to level-up.  A more general facility is likely in the future.  This implementation of a skip list
+ * whether or not to level-up.  A more utils facility is likely in the future.  This implementation of a skip list
  * also has additional methods that make it useful for applications other than as a substitute for a binary tree.  It
  * supports O(1) retrieval of minimum and maximum list (numerical) values as well as fast removal of the minimum- or
  * maximum-value node.  With these methods, the list could be used as an alternative to a min or max binary heap.
@@ -110,7 +110,7 @@ export class TSMT$SkipList
 
   /**
    * Access a row-by-row representation of the internal structure of the current list.  Each array contains a list of
-   * {TSMT$ISkipListData>} that represents the internal contents of each row of the skip list.  This is used primarily as a 
+   * {TSMT$ISkipListData>} that represents the internal contents of each row of the skip list.  This is used primarily as a
    * debugging facility and has possible use in educational applications.  This method should be used only on small-sized
    * lists and is subject to future deprecation.
    */

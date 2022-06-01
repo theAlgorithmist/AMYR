@@ -1,4 +1,4 @@
-﻿/** 
+﻿/**
  * Copyright 2018 Jim Armstrong (www.algorithmist.net)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,13 +20,13 @@ import {TSMT$DSNode} from "./ds-node-impl";
  * Typescript Math Toolkit:  Minimal implementation of a disjoint set node
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
 export interface TSMT$IDSNode
 {
-  key: string;                           // general key or id for this node
+  key: string;                           // utils key or id for this node
   value?: number | string;               // node value
   rank: number;                          // if this is the representative node in a set, this represents the rank of that set
   data?: object;                         // some auxiliary data that is store with the node

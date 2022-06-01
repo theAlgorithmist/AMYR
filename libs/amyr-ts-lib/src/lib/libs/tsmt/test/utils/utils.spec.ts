@@ -334,7 +334,7 @@ describe('Number Formatter (insert commas)', () =>
   });
 });
 
-describe('Number Formatter (general formatter)', () =>
+describe('Number Formatter (utils formatter)', () =>
 {
   it('returns (string) NaN if input is invalid', function ()
   {
@@ -446,17 +446,17 @@ describe('String Utils (startsWith)', () =>
     expect(stringUtils.startsWith('z', 'a', 1)).toBe(false);
   });
 
-  it('returns correct result for general string #1', function ()
+  it('returns correct result for utils string #1', function ()
   {
     expect(stringUtils.startsWith('az', 'a')).toBe(true);
   });
 
-  it('returns correct result for general string #2', function ()
+  it('returns correct result for utils string #2', function ()
   {
     expect(stringUtils.startsWith('Az', 'a')).toBe(false);
   });
 
-  it('returns correct result for general string #3', function ()
+  it('returns correct result for utils string #3', function ()
   {
     expect(stringUtils.startsWith('AbcdEfghz', 'cdE', 2)).toBe(true);
   });

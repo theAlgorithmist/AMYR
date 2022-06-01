@@ -56,8 +56,6 @@ TSMT folder structure is documented below. (C) means that code in that folder is
 
 ## Geometry
 
-  general - Folder containing general or misc geometry classes (empty)
-
   hulls - Folder contain hull-computation classes and utilities
   - **convex-hull** Functions to compute convex hull of a planar point collection
   - **concave-hull** Concave-hull computations
@@ -68,12 +66,20 @@ TSMT folder structure is documented below. (C) means that code in that folder is
 
   planar - Folder containing planar-curve classes
 
+  - **cubic-bezier** Cubic Bezier with 4-point interpolation and arc-length parameterization
   - **line** Parametric representation of a straight line in the plane
   - **planar-curve** Abstract base class for up to cubic parametric curves in the plane
+  - **quad-bezier** Quadratic Bezier with 3-point interpolation and arc-length parameterization
+
+  circle - **Circle** class - general representation of a circle and methods to manage circle in quarants
 
   point - **PlanarPoint** class.  Representation of and computations on points in the plane.
 
   polygon - **Polygon** class. A general, two-dimensional (closed) polygon class.  Supports centroid computations, translation, and scaling about the centroid.
+
+  utils - Folder containing general or misc geometry classes
+
+  - **circle-factory** - create one or more circles in a rectangular bounding region
 
 ## Graphing
 

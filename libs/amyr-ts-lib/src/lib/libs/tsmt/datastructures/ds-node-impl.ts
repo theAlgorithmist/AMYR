@@ -1,4 +1,4 @@
-﻿/** 
+﻿/**
  * Copyright 2018 Jim Armstrong (www.algorithmist.net)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@
  * Typescript Math Toolkit: Concrete (and cloneable) implementation of the TSMT$ISkipListNode interface.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -26,7 +26,7 @@ import {TSMT$IDSNode} from "./ds-node";
 
 export class TSMT$DSNode implements TSMT$IDSNode
 {
-  public key: string;                   // general key or id for this node (MUST be unique)
+  public key: string;                   // utils key or id for this node (MUST be unique)
   public value: number | string;        // node value (in future will likely be an IComparable)
   public rank: number;                  // if this is the representative node in a set, this represents the rank of that set
   public data: object;                  // auxiliary data associated with this node

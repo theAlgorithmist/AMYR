@@ -1,4 +1,4 @@
-/** 
+/**
  * Copyright 2016 Jim Armstrong (www.algorithmist.net)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,25 +15,25 @@
  */
 
 /**
- * Typescript Math Toolkit: Linked List Node.  A general node structure for a linked list.  Supports single or doubly linked lists and allows a node to be specified
+ * Typescript Math Toolkit: Linked List Node.  A utils node structure for a linked list.  Supports single or doubly linked lists and allows a node to be specified
  * as a sentinel node.  Data associated with this node is supplied by an arbitrary Object.  Note that to support fast list operations, nodes are directly mutable as
  * well as node data (you break it, you buy it).
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
  export class TSMT$ListNode
  {
-   public id = "node";                            // a general id for this node
+   public id = "node";                            // a utils id for this node
 
    private _isSentinel = false;                   // true if this is a sentinal node
    private _next!: TSMT$ListNode | null;          // reference to next node in sequence
    private _prev!: TSMT$ListNode | null;          // reference to previous node in sequence
    private _data: object;                         // data for this node
-   
+
    constructor()
-   { 
+   {
      this.clear();
 
      this._data = new Object();
@@ -64,7 +64,7 @@
    {
      if (!this._next) return this._isSentinel ? this : null;
 
-     return this._next; 
+     return this._next;
    }
 
   /**

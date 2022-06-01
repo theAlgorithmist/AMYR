@@ -252,7 +252,7 @@ import * as geomUtils from './geom-utils';
      };
 
      // for now, inner is presumed entirely inside of outer - no test is made for this condition.  The algorithm is
-     // suitable for general use in interactive applications and is O(E*log(E)) where E is the maximum number of edges
+     // suitable for utils use in interactive applications and is O(E*log(E)) where E is the maximum number of edges
      // in both polygons.
 
      // West separation

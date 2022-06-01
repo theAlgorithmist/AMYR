@@ -15,7 +15,7 @@
  */
 
 /**
- * AMYR Library: Low-level, general string utility functions (probably similar to many you have seen
+ * AMYR Library: Low-level, utils string utility functions (probably similar to many you have seen
  * elsewhere as there really isn't anything new under the sun).  These methods are optimized for reasonable
  * performance and there is little error checking.  You break it ... you buy it.  Some methods are direct
  * replacement for lodash equivalents.

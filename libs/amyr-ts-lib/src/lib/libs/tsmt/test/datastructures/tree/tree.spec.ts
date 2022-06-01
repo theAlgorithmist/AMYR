@@ -1360,7 +1360,7 @@ describe('Tree Tests: TSMT$Tree<T>', () => {
     expect(tree.levels).toBe(1);
   });
 
-  it('general level test', () =>
+  it('utils level test', () =>
   {
     const tree: TSMT$Tree<number> = new TSMT$Tree<number>();
 
@@ -1834,7 +1834,7 @@ describe('Tree Tests: TSMT$Tree<T>', () => {
     expect(path.length).toBe(1);
   });
 
-  it('general level order traversal #1', () =>
+  it('utils level order traversal #1', () =>
   {
     const tree: TSMT$Tree<number> = new TSMT$Tree<number>();
     tree.ordered = false;
@@ -1850,7 +1850,7 @@ describe('Tree Tests: TSMT$Tree<T>', () => {
     expect(path[1].id).toBe('A');
   });
 
-  it('general level order traversal #2', () =>
+  it('utils level order traversal #2', () =>
   {
     const tree: TSMT$Tree<number> = new TSMT$Tree<number>();
     tree.ordered = false;
@@ -1870,7 +1870,7 @@ describe('Tree Tests: TSMT$Tree<T>', () => {
     expect(path[3].id).toBe('C');
   });
 
-  it('general level order traversal #3', () =>
+  it('utils level order traversal #3', () =>
   {
     const tree: TSMT$Tree<number> = new TSMT$Tree<number>();
     tree.ordered = false;
@@ -1898,7 +1898,7 @@ describe('Tree Tests: TSMT$Tree<T>', () => {
     expect(path[6].id).toBe('F');
   });
 
-  it('general level order traversal #4', () =>
+  it('utils level order traversal #4', () =>
   {
     const tree: TSMT$Tree<number> = new TSMT$Tree<number>();
     tree.ordered = false;
