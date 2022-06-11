@@ -77,6 +77,11 @@ TSMT folder structure is documented below. (C) means that code in that folder is
 
   polygon - **Polygon** class. A general, two-dimensional (closed) polygon class.  Supports centroid computations, translation, and scaling about the centroid.
 
+  splines - Spline classes include
+
+  - **CubicBezierSpline** (piecewise) cubic bezier spline with auto-closure
+  - **CubicSpline** Natural cubic spline with C-2 continuity (no overlapping interpolation segments)
+
   utils - Folder containing general or misc geometry classes
 
   - **circle-factory** - create one or more circles in a rectangular bounding region

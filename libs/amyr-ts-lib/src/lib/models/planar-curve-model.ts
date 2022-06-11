@@ -68,3 +68,11 @@ export interface PlanarCurveModel extends ControlPoints
 
   lengthAt(t: number): number;
 }
+
+export enum SplineTypes
+{
+  CARTESIAN    = "cartesian",
+  CUBIC_BEZIER = "cubicbezier",
+  CATMULL_ROM  = "catmullrom"
+}
+

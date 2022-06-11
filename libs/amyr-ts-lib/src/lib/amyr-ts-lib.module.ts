@@ -254,6 +254,11 @@ export { createCircle } from "./libs/tsmt/geometry/utils/circle-factory";
 export { QuadBezier  } from "./libs/tsmt/geometry/planar/quad-bezier";
 export { CubicBezier } from "./libs/tsmt/geometry/planar/cubic-bezier";
 
+export { CubicSpline } from "./libs/tsmt/geometry/splines/natural-cubic-spline";
+export { BezierSplineControl } from "./libs/tsmt/geometry/splines/bezier-spline-control";
+export { CubicBezierSpline } from "./libs/tsmt/geometry/splines/cubic-bezier-spline";
+export { SplineTypes } from "./models/planar-curve-model";
+
 @NgModule({
   imports: [CommonModule],
 })
