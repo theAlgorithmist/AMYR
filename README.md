@@ -63,7 +63,7 @@ Version: 0.0.12
     * kinematics (2D forward/inverse kinematics library) - E
     * lazy-load (lazy-load JS and CSS files) - E
     * **misc (because it doesn't fit anywhere else) - P**
-    * optimization (a variety of methods to find extrema of functions) - E
+    * **[optimization](/libs/amyr-ts-lib/src/lib/libs/optimization/Readme.md) (a variety of methods to find extrema of functions) - P**
     * paging (libraries to support dynamic paging of content) - E
     * profiles (libraries supporting operation on multi-valued time-series) - E
     * search (search functions)

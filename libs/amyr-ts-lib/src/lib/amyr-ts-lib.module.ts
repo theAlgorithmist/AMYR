@@ -268,6 +268,9 @@ export * as amyrConstants from '../../src/lib/models/constants';
 export { Normal    } from "./libs/tsmt/statistics/normal";
 export { ExtNormal } from "./libs/tsmt/statistics/ext-normal";
 
+export { NMSimplex  } from "./models/optimization-models";
+export { nelderMead } from "./libs/optimization/nelder-mead";
+
 @NgModule({
   imports: [CommonModule],
 })
