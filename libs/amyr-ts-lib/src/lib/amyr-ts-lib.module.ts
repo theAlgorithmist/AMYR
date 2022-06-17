@@ -259,6 +259,15 @@ export { BezierSplineControl } from "./libs/tsmt/geometry/splines/bezier-spline-
 export { CubicBezierSpline } from "./libs/tsmt/geometry/splines/cubic-bezier-spline";
 export { SplineTypes } from "./models/planar-curve-model";
 
+export { Fences, Confidence } from "./models/state-models";
+
+export { BinomialCoef } from "./libs/tsmt/statistics/binomial-coef";
+export { ChiSquare    } from "./libs/tsmt/statistics/chi-square";
+export { isEven, DataStats} from "./libs/tsmt/statistics/data-stats";
+export * as amyrConstants from '../../src/lib/models/constants';
+export { Normal    } from "./libs/tsmt/statistics/normal";
+export { ExtNormal } from "./libs/tsmt/statistics/ext-normal";
+
 @NgModule({
   imports: [CommonModule],
 })

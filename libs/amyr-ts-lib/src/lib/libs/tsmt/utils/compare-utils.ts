@@ -76,7 +76,6 @@
  * @default 0.01
  *
  */
-
  export function vectorCompare(vector1: Array<number>, vector2: Array<number>, epsilon: number = 0.01): boolean
  {
    const n1: number = vector1.length;

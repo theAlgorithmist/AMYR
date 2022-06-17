@@ -101,7 +101,19 @@ TSMT folder structure is documented below. (C) means that code in that folder is
  - neville (Implementation of Neville's Method for interpolation)
  - prime-factorization (Prime Factorization algorithm for modest-sized integers)
  - quaternion (General operations on Quaternions)
- - repeat-to-frace (Repeating decimal to fracitonal form)
+ - repeat-to-frace (Repeating decimal to fractional form)
+
+## Statistics
+
+  - **bayes** Bayesian analysis (placeholder)
+  - **regression** Linear and polynomial least squares (placeholder)
+  - binomial-coef (Pascal's triangle with ability to quickly move up or down the triangle)
+  - chi-square (Chi-square distribution)
+  - data-stats (basic statistics with JIT computation of common stats)
+  - ext-normal (Extended Normal distribution intended for graphing applications)
+  - normal (Normal distribution with first derivatives)
+  - poisson (Poisson distribution)
+  - special-fcn (Special function approximations)
 
 ## Utils
 

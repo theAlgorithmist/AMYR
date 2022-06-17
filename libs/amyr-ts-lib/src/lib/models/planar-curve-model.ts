@@ -76,3 +76,8 @@ export enum SplineTypes
   CATMULL_ROM  = "catmullrom"
 }
 
+export interface Split
+{
+  left: ControlPoints;
+  right: ControlPoints;
+}
