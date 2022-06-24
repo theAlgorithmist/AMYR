@@ -23,7 +23,7 @@
  */
 import { FcnEval } from "../../../models/fcn-eval";
 
-export class TSMT$Derivative
+export class Derivative
 {
   public static LIMIT = 8;  // Iteration limit for Ridders' method
 
@@ -92,7 +92,7 @@ export class TSMT$Derivative
     let deriv = 0;
 
     const a: Array<Array<number>> = new Array<Array<number>>();
-    for (i = 0; i <TSMT$Derivative.LIMIT; ++i ) {
+    for (i = 0; i <Derivative.LIMIT; ++i ) {
       a.push([]);
     }
 
@@ -101,7 +101,7 @@ export class TSMT$Derivative
     let err: number = Number.MAX_VALUE;
     a[0][0]         = (f(x+hh)-f(x-hh))/(2.0*hh);
 
-    for (i = 1; i < TSMT$Derivative.LIMIT; ++i )
+    for (i = 1; i < Derivative.LIMIT; ++i )
     {
       hh     /= con;
       a[0][i] = (f(x+hh)-f(x-hh))/(2.0*hh);

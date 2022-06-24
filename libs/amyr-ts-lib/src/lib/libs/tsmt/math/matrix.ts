@@ -30,7 +30,7 @@
  * @version 1.0
  */
 
-export class TSMT$Matrix
+export class Matrix
 {
   protected _n = 0;                           // column count
   protected _matrix: Array< Array<number> >;  // internal reference to array of row arrays
@@ -237,9 +237,9 @@ export class TSMT$Matrix
   /**
    * Clone the current {Matrix}
    */
-  public clone(): TSMT$Matrix
+  public clone(): Matrix
   {
-    const t: TSMT$Matrix = new TSMT$Matrix();
+    const t: Matrix = new Matrix();
     const m: number      = this.m;
     let i: number;
 
@@ -308,9 +308,9 @@ export class TSMT$Matrix
   /**
    * Add a matrix to the current matrix and overwrite the current elements
    *
-   * @param {TSMT$Matrix} m Matrix to be added to the current Matrix
+   * @param {Matrix} m Matrix to be added to the current Matrix
    */
-  public add(matrix: TSMT$Matrix): void
+  public add(matrix: Matrix): void
   {
     if ( !matrix || matrix.m != this._matrix.length || matrix.n != this._n ) return;
 
@@ -336,13 +336,13 @@ export class TSMT$Matrix
   /**
    * Add a matrix to the current matrix and return the result in a new Matrix
    *
-   * @param {TSMT$Matrix} m Matrix to be added to the current Matrix
+   * @param {Matrix} m Matrix to be added to the current Matrix
    */
-  public addTo(matrix: TSMT$Matrix): TSMT$Matrix | null
+  public addTo(matrix: Matrix): Matrix | null
   {
     if (!matrix || matrix.m != this._matrix.length || matrix.n != this._n) return null;
 
-    const theMatrix: TSMT$Matrix = this.clone();
+    const theMatrix: Matrix = this.clone();
     theMatrix.add(matrix);
 
     return theMatrix;  // yes, it has you ...
@@ -351,9 +351,9 @@ export class TSMT$Matrix
   /**
    * Subtract a matrix from the current matrix and overwrite the current elements
    *
-   * @param {TSMT$Matrox} m Matrix to be subtracted from the current Matrix
+   * @param {Matrox} m Matrix to be subtracted from the current Matrix
    */
-  public subtract(matrix: TSMT$Matrix): void
+  public subtract(matrix: Matrix): void
   {
     if (!matrix || matrix.m != this._matrix.length || matrix.n != this._n ) {
       return;
@@ -381,13 +381,13 @@ export class TSMT$Matrix
   /**
    * Subtract a matrix from the current matrix and return the result in a new Matrix
    *
-   * @param {TSMT$Matrix} m Matrix to be subtracted from the current Matrix
+   * @param {Matrix} m Matrix to be subtracted from the current Matrix
    */
-  public subtractFrom(matrix: TSMT$Matrix): TSMT$Matrix | null
+  public subtractFrom(matrix: Matrix): Matrix | null
   {
     if (matrix.m != this._matrix.length || matrix.n != this._n) return null;
 
-    const theMatrix:TSMT$Matrix = this.clone();
+    const theMatrix:Matrix = this.clone();
     theMatrix.subtract(matrix);
 
     return theMatrix;  // yes, it has you
@@ -425,7 +425,7 @@ export class TSMT$Matrix
    */
   public transpose(): void
   {
-    const temp:TSMT$Matrix = this.clone();
+    const temp:Matrix = this.clone();
 
     const m: number = this._n;      // new number of rows
     const n: number = this.m;       // new number of columns
@@ -447,9 +447,9 @@ export class TSMT$Matrix
   /**
    * Return the transpose of the current matrix
    */
-  public transposeInto(): TSMT$Matrix
+  public transposeInto(): Matrix
   {
-    const t: TSMT$Matrix = this.clone();
+    const t: Matrix = this.clone();
     t.transpose();
 
     return t;
@@ -497,13 +497,13 @@ export class TSMT$Matrix
    * and the result will be a new, m x p matrix.  There is little error-checking for performance reasons - the current
    * matrix is unchanged if the operation is not defined.
    *
-   * @param {TSMT$Matrix} m Input Matrix to be multiplied by the current matrix
+   * @param {Matrix} m Input Matrix to be multiplied by the current matrix
    */
-  public multiply(matrix: TSMT$Matrix): void
+  public multiply(matrix: Matrix): void
   {
     if (!matrix || this._n != matrix.m) return;
 
-    const t:TSMT$Matrix = this.clone();
+    const t:Matrix = this.clone();
     const m: number     = this._matrix.length;
     const p: number     = matrix.n;
 
@@ -545,13 +545,13 @@ export class TSMT$Matrix
    * appropriate dimensions for the multiplication.  If the current matrix is m x n, the input matrix must be n x p
    * and the result will be a new, m x p matrix.  A new 0x0 {Matrix} is returned if the operationis not defined.
    *
-   * @param {TSMT$Matrix} m Input Matrix to be multiplied by the current Matrix
+   * @param {Matrix} m Input Matrix to be multiplied by the current Matrix
    */
-  public multiplyInto(matrix: TSMT$Matrix): TSMT$Matrix
+  public multiplyInto(matrix: Matrix): Matrix
   {
-    if (!matrix || this._n != matrix.m) return new TSMT$Matrix();
+    if (!matrix || this._n != matrix.m) return new Matrix();
 
-    const t: TSMT$Matrix = this.clone();
+    const t: Matrix = this.clone();
     t.multiply(matrix);
 
     return t;

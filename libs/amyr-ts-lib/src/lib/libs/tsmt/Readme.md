@@ -105,8 +105,14 @@ TSMT folder structure is documented below. (C) means that code in that folder is
 
 ## Statistics
 
-  - **bayes** Bayesian analysis (placeholder)
-  - **regression** Linear and polynomial least squares (placeholder)
+  - **bayes** Bayesian analysis
+    - bayes (naive Bayes analysis)
+    - frequency-table (2D frequency table for used in Bayes analys)
+  - **regression** Linear and polynomial least squares
+    - bagging (Support class for bagging in least squares)
+    - bllsq (linear least squares with bagging and sub-bagging)
+    - llsq (linear least squares fit witch chi-2 and rms error)
+    - pllsq (polynomial least squares regression)
   - binomial-coef (Pascal's triangle with ability to quickly move up or down the triangle)
   - chi-square (Chi-square distribution)
   - data-stats (basic statistics with JIT computation of common stats)

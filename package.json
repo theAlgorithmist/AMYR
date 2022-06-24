@@ -34,6 +34,8 @@
     "test:tsmt:skip-list": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/skip-list/skiplist.spec.ts",
     "test:tsmt:stack": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/stack/stack.spec.ts",
     "test:tsmt:statistics": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/statistics/statistics.spec.ts",
+    "test:tsmt:statistics:bayes": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/statistics/bayes/bayes.spec.ts",
+    "test:tsmt:statistics:regression": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/statistics/regression/regression.spec.ts",
     "test:tsmt:tree": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/tree/tree.spec.ts",
     "test:tsmt:trie": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/datastructures/trie/trie.spec.ts",
     "test:tsmt:utils": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/tsmt/test/utils/utils.spec.ts"

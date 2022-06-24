@@ -130,11 +130,11 @@ export { TSMT$Tree         } from './libs/tsmt/datastructures/tree';
 export { TSMT$Trie         } from './libs/tsmt/datastructures/trie';
 
 // TSMT Math
-export { FcnEval                 } from "./models/fcn-eval";
-export { TSMT$Derivative         } from "./libs/tsmt/math/derivative";
-export { TSMT$Matrix             } from "./libs/tsmt/math/matrix";
-export { nevilleInterpolate      } from "./libs/tsmt/math/neville";
-export { TSMT$PrimeFactorization } from "./libs/tsmt/math/prime-factorization";
+export { FcnEval            } from "./models/fcn-eval";
+export { Derivative         } from "./libs/tsmt/math/derivative";
+export { Matrix             } from "./libs/tsmt/math/matrix";
+export { nevilleInterpolate } from "./libs/tsmt/math/neville";
+export { PrimeFactorization } from "./libs/tsmt/math/prime-factorization";
 export {
   Quaterion,
   TSMT$Quaternion
@@ -270,6 +270,15 @@ export { ExtNormal } from "./libs/tsmt/statistics/ext-normal";
 
 export { NMSimplex  } from "./models/optimization-models";
 export { nelderMead } from "./libs/optimization/nelder-mead";
+
+export { Bayes } from "./libs/tsmt/statistics/bayes/bayes";
+export { FrequencyTable } from "./libs/tsmt/statistics/bayes/frequency-table";
+export { linearFit  } from "./libs/tsmt/statistics/regression/llsq";
+export { Pllsq } from "./libs/tsmt/statistics/regression/pllsq";
+export { Deviates } from "./libs/tsmt/statistics/deviates";
+export * from './libs/tsmt/statistics/regression/bagging';
+
+export { LLSQResult, PolyLLSQResult } from "./models/regression-models";
 
 @NgModule({
   imports: [CommonModule],

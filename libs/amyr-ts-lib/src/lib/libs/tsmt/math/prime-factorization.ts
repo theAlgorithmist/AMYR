@@ -21,7 +21,7 @@
  *
  * @version 1.0
  */
-export class TSMT$PrimeFactorization
+export class PrimeFactorization
 {
   protected _isFinished: boolean;      // true if procedure finished
 
