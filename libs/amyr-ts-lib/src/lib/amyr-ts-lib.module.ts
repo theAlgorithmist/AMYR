@@ -280,6 +280,15 @@ export * from './libs/tsmt/statistics/regression/bagging';
 
 export { LLSQResult, PolyLLSQResult } from "./models/regression-models";
 
+export { VSM_FILTER_WORDS, WordVector, VSM_OP } from "./models/vsm";
+export { cosineSim, vsmCosineSim } from "./libs/text-vsm/cosine-similarity";
+export { score     } from "./libs/text-vsm/score";
+export { textToVSM } from "./libs/text-vsm/text-to-vector-state-model";
+export { TFIDF     } from "./libs/text-vsm/tf-idf";
+export { toVector  } from "./libs/text-vsm/to-vector";
+export { vsmMod    } from "./libs/text-vsm/vsm-mod";
+export { vsmNorm   } from "./libs/text-vsm/vsm-norm";
+
 @NgModule({
   imports: [CommonModule],
 })

@@ -26,6 +26,8 @@ Corporate Sponsors are listed below:
 
 [CYBERMANCERS](https://www.linkedin.com/in/matthew-ryan-willox/)
 
+[GEAR FOR LIFE](http://www.gearforlife.com)
+
 # INDIVIDUAL SPONSORS
 
 What to show your support (with a link to your website or LinkedIn/social media)?  All it takes is 15 cups and you will be right here!
@@ -48,7 +50,7 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.13
+Version: 0.0.14
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
@@ -68,6 +70,7 @@ Version: 0.0.13
     * profiles (libraries supporting operation on multi-valued time-series) - E
     * search (search functions)
     * **sorting (sort functions) - P**
+    * **text-vsm - C** (Text vetor state model and text-frequency/inverse document frequency analysis)
     * **[TypeScript Math Toolkit](/libs/amyr-ts-lib/src/lib/libs/tsmt/Readme.md) - P**
     * validation (validator functions) - E
     * utils (general utilities) - E

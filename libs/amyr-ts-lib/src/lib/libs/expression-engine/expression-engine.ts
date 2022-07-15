@@ -57,13 +57,18 @@
 
 export type expressionValue   = number | string | boolean;
 export type expressionOperand = number | string | boolean;
-export type ExpressionFcn     = (... args:Array<expressionOperand>) => expressionValue;
+export type ExpressionFcn     = (... args: Array<expressionOperand>) => expressionValue;
 
 export class ExpressionEngine
 {
   // symbolic names for operators converted to stack functions
+  protected ABS                = "abs";
   protected ADD                = "add";
+  protected AND                = "and";
+  protected CEIL               = "ceil";
+  protected CONTAINS           = "contains";
   protected DIVIDE             = "div";
+  protected FLOOR              = "floor";
   protected MAX                = "max";
   protected MIN                = "min";
   protected MULTIPLY           = "mul";
@@ -71,13 +76,12 @@ export class ExpressionEngine
   protected LESS_THAN          = "lt";
   protected LESS_THAN_EQUAL    = "le";
   protected EQUAL              = "eq";
-  protected NOT_EQUAL          = "ne";
   protected GREATER_THAN       = "gt";
   protected GREATER_THAN_EQUAL = "ge";
-  protected AND                = "and";
-  protected OR                 = "or";
-  protected CONTAINS           = "contains";
   protected NEGATE             = "negate";
+  protected NOT_EQUAL          = "ne";
+  protected OR                 = "or";
+  protected ROUND              = "round";
 
   // sort of a grammar ... sort of
   protected CHARACTERS                  = "abcdefghijklmnopqrstuwvxzyABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -94,7 +98,7 @@ export class ExpressionEngine
   protected OP_LIST_4                   = "^*+,/(";
 
   // single- and two-argument functions
-  protected ONE_ARG_FUNCTIONS:Array<string> = [ "abs", "ceil", "floor", "round", this.NEGATE ];
+  protected ONE_ARG_FUNCTIONS:Array<string> = [ this.ABS, this.CEIL, this.FLOOR, this.ROUND, this.NEGATE ];
   protected TWO_ARG_FUNCTIONS:Array<string> = [ this.ADD, this.DIVIDE, this.MAX, this.MIN, this.MULTIPLY, this.SUBTRACT, this.LESS_THAN, this.LESS_THAN_EQUAL,
     this.EQUAL, this.NOT_EQUAL, this.GREATER_THAN, this.GREATER_THAN_EQUAL, this.AND, this.OR, this.CONTAINS];
 
@@ -485,7 +489,7 @@ export class ExpressionEngine
           // access the function with the provided name, i.e. abs()
           f = (this as unknown as Record<string, ExpressionFcn>)[token] as ExpressionFcn;
 
-          if( f === undefined ) return false;     // unsupported function
+          if (f === undefined) return false;     // unsupported function
 
           opStack.push( f(arg1) as expressionValue );
           break;

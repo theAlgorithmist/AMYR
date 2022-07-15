@@ -443,6 +443,7 @@ describe('Expression Parser Tests', () => {
     __expression.variables = ["x", "y"];
 
     const success: boolean = __expression.parse( "(2*x) >= (3*y - 2)" );
+    console.log('stack:', __expression.stack);
     expect(success).toBe(true);
 
     let value: expressionValue = __expression.evaluate([-2, 0]);
