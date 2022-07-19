@@ -254,10 +254,10 @@ export { createCircle } from "./libs/tsmt/geometry/utils/circle-factory";
 export { QuadBezier  } from "./libs/tsmt/geometry/planar/quad-bezier";
 export { CubicBezier } from "./libs/tsmt/geometry/planar/cubic-bezier";
 
-export { CubicSpline } from "./libs/tsmt/geometry/splines/natural-cubic-spline";
+export { CubicSpline         } from "./libs/tsmt/geometry/splines/natural-cubic-spline";
 export { BezierSplineControl } from "./libs/tsmt/geometry/splines/bezier-spline-control";
-export { CubicBezierSpline } from "./libs/tsmt/geometry/splines/cubic-bezier-spline";
-export { SplineTypes } from "./models/planar-curve-model";
+export { CubicBezierSpline   } from "./libs/tsmt/geometry/splines/cubic-bezier-spline";
+export { SplineTypes         } from "./models/planar-curve-model";
 
 export { Fences, Confidence } from "./models/state-models";
 
@@ -271,11 +271,11 @@ export { ExtNormal } from "./libs/tsmt/statistics/ext-normal";
 export { NMSimplex  } from "./models/optimization-models";
 export { nelderMead } from "./libs/optimization/nelder-mead";
 
-export { Bayes } from "./libs/tsmt/statistics/bayes/bayes";
+export { Bayes          } from "./libs/tsmt/statistics/bayes/bayes";
 export { FrequencyTable } from "./libs/tsmt/statistics/bayes/frequency-table";
-export { linearFit  } from "./libs/tsmt/statistics/regression/llsq";
-export { Pllsq } from "./libs/tsmt/statistics/regression/pllsq";
-export { Deviates } from "./libs/tsmt/statistics/deviates";
+export { linearFit      } from "./libs/tsmt/statistics/regression/llsq";
+export { Pllsq          } from "./libs/tsmt/statistics/regression/pllsq";
+export { Deviates       } from "./libs/tsmt/statistics/deviates";
 export * from './libs/tsmt/statistics/regression/bagging';
 
 export { LLSQResult, PolyLLSQResult } from "./models/regression-models";
@@ -288,6 +288,27 @@ export { TFIDF     } from "./libs/text-vsm/tf-idf";
 export { toVector  } from "./libs/text-vsm/to-vector";
 export { vsmMod    } from "./libs/text-vsm/vsm-mod";
 export { vsmNorm   } from "./libs/text-vsm/vsm-norm";
+
+export { DAY_OF_WEEK, DayHourOffsetModel, TimeValues } from "./models/day-and-time";
+export { capitalizeFirst      } from "./libs/misc/capitalize-first";
+export { clearLocalStorage    } from "./libs/misc/clear-local-storage";
+export { dayHourOffset        } from "./libs/misc/day-hour-offset";
+export { DayIterator          } from "./libs/misc/day-iterator";
+export { fromLocalStorage     } from "./libs/misc/from-local-storage";
+export { fromMilliseconds     } from "./libs/misc/time-stamp-to-milliseconds";
+export { getCookieValue       } from "./libs/misc/get-cookie-value";
+export { inEnum               } from "./libs/misc/in-enum";
+export { indexOfMax           } from "./libs/misc/index-of-max";
+export { intervalsBetweenDays } from "./libs/misc/interval-between-days";
+export { iterativeMean        } from "./libs/misc/iterative-mean";
+export { orderedPermutations  } from "./libs/misc/ordered-permutations";
+export { setCookie            } from "./libs/misc/set-cookie-value";
+export { toLocalStorage       } from "./libs/misc/to-local-storage";
+export { toMilliseconds       } from "./libs/misc/time-unit-to-milliseconds";
+export { toSpacedList         } from "./libs/misc/to-spaced-list";
+export { uuid                 } from "./libs/misc/uuid";
+export { missingStep          } from "./libs/misc/missing-step";
+export { maxDelta             } from "./libs/misc/max-delta";
 
 @NgModule({
   imports: [CommonModule],

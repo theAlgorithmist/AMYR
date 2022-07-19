@@ -50,7 +50,7 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.14
+Version: 0.0.15
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
@@ -64,7 +64,7 @@ Version: 0.0.14
     * **[functional-programming](/libs/amyr-ts-lib/src/lib/libs/functional-programming#readme) (compact, pure functions for use in FP applications) - P**
     * kinematics (2D forward/inverse kinematics library) - E
     * lazy-load (lazy-load JS and CSS files) - E
-    * **misc (because it doesn't fit anywhere else) - P**
+    * **[misc](/libs/amyr-ts-lib/src/lib/libs/misc/Readme.md) (because it doesn't fit anywhere else) - P**
     * **[optimization](/libs/amyr-ts-lib/src/lib/libs/optimization/Readme.md) (a variety of methods to find extrema of functions) - P**
     * paging (libraries to support dynamic paging of content) - E
     * profiles (libraries supporting operation on multi-valued time-series) - E
