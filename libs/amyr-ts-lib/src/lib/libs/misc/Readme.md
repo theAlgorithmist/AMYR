@@ -1,4 +1,4 @@
-# AMYR MISC FUNCtIONS LIBRARY
+# AMYR MISC FUNCTIONS LIBRARY
 
 The _AMYR_ library contains numerous miscellaneous classes and functions that support important, but _one-off_ functionality that does not generally fit anywhere else in the library
 

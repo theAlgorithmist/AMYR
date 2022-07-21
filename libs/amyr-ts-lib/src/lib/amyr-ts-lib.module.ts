@@ -290,25 +290,25 @@ export { vsmMod    } from "./libs/text-vsm/vsm-mod";
 export { vsmNorm   } from "./libs/text-vsm/vsm-norm";
 
 export { DAY_OF_WEEK, DayHourOffsetModel, TimeValues } from "./models/day-and-time";
-export { capitalizeFirst      } from "./libs/misc/capitalize-first";
-export { clearLocalStorage    } from "./libs/misc/clear-local-storage";
-export { dayHourOffset        } from "./libs/misc/day-hour-offset";
-export { DayIterator          } from "./libs/misc/day-iterator";
-export { fromLocalStorage     } from "./libs/misc/from-local-storage";
-export { fromMilliseconds     } from "./libs/misc/time-stamp-to-milliseconds";
-export { getCookieValue       } from "./libs/misc/get-cookie-value";
-export { inEnum               } from "./libs/misc/in-enum";
-export { indexOfMax           } from "./libs/misc/index-of-max";
-export { intervalsBetweenDays } from "./libs/misc/interval-between-days";
-export { iterativeMean        } from "./libs/misc/iterative-mean";
-export { orderedPermutations  } from "./libs/misc/ordered-permutations";
-export { setCookie            } from "./libs/misc/set-cookie-value";
-export { toLocalStorage       } from "./libs/misc/to-local-storage";
-export { toMilliseconds       } from "./libs/misc/time-unit-to-milliseconds";
-export { toSpacedList         } from "./libs/misc/to-spaced-list";
-export { uuid                 } from "./libs/misc/uuid";
-export { missingStep          } from "./libs/misc/missing-step";
-export { maxDelta             } from "./libs/misc/max-delta";
+export { capitalizeFirst         } from "./libs/misc/capitalize-first";
+export { clearLocalStorage       } from "./libs/misc/clear-local-storage";
+export { dayHourOffset           } from "./libs/misc/day-hour-offset";
+export { DayIterator             } from "./libs/misc/day-iterator";
+export { fromLocalStorage        } from "./libs/misc/from-local-storage";
+export { timeStampToMilliseconds } from "./libs/misc/time-stamp-to-milliseconds";
+export { getCookieValue          } from "./libs/misc/get-cookie-value";
+export { inEnum                  } from "./libs/misc/in-enum";
+export { indexOfMax              } from "./libs/misc/index-of-max";
+export { intervalsBetweenDays    } from "./libs/misc/interval-between-days";
+export { iterativeMean           } from "./libs/misc/iterative-mean";
+export { orderedPermutations     } from "./libs/misc/ordered-permutations";
+export { setCookie               } from "./libs/misc/set-cookie-value";
+export { toLocalStorage          } from "./libs/misc/to-local-storage";
+export { timeUnitToMilliseconds  } from "./libs/misc/time-unit-to-milliseconds";
+export { toSpacedList            } from "./libs/misc/to-spaced-list";
+export { uuid                    } from "./libs/misc/uuid";
+export { missingStep             } from "./libs/misc/missing-step";
+export { maxDelta                } from "./libs/misc/max-delta";
 
 @NgModule({
   imports: [CommonModule],
