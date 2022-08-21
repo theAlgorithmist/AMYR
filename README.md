@@ -36,6 +36,8 @@ Individual sponsors are listed below:
 
 [Matthew Willox](https://www.linkedin.com/in/matthew-ryan-willox/)
 
+[Kevin Miller](https://www.linkedin.com/in/kevm254/)
+
 # WHAT'S IN A NAME?
 
 "Why _AMYR_?  The name goes back to my college experience and a conversation about band names one evening in the dorm lounge.  One of my friends told a story about how he would name a band.  The story is too long to repeat here, but it was an interesting experience by a group of teenagers and a Chevy Camaro.  The 'Camaro' marking on the side had been previously damaged in a side-swipe.  The 'C' and 'o' were missing and the last 'a' was streaked to look like a 'y'.  So, the marking on the side of the car looked like the Chevy 'amyr'.  This lead to a unique adventure; think of 'Vger' from 'Star Trek The Motion Picture'.  My friend said if he ever formed a band, he would name it _AMYR_.  The _AMYR_ is an order featured in the KingKiller Chronicles.  Their creed is 'for the greater good.'  While I have no interest in KingKiller, I thought the motto was fitting.  That's what this library is all about - all of us together, working for the greater good. I hope you see fit to support the effort."
@@ -50,7 +52,7 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.15
+Version: 0.0.16
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E

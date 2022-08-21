@@ -310,6 +310,10 @@ export { uuid                    } from "./libs/misc/uuid";
 export { missingStep             } from "./libs/misc/missing-step";
 export { maxDelta                } from "./libs/misc/max-delta";
 
+export { DecisionNode, DECISION_TREE_ACTIONS } from "./models/decision-tree";
+export { DecisionTree     } from "./libs/ai/decision-tree/decision-tree";
+export { extractVariables } from "./libs/ai/decision-tree/extract-variables";
+
 @NgModule({
   imports: [CommonModule],
 })
