@@ -314,6 +314,9 @@ export { DecisionNode, DECISION_TREE_ACTIONS } from "./models/decision-tree";
 export { DecisionTree     } from "./libs/ai/decision-tree/decision-tree";
 export { extractVariables } from "./libs/ai/decision-tree/extract-variables";
 
+export * from '../lib/models/clock-time';
+export { ClockTimeModel } from "./libs/misc/models/clock-time-model";
+
 @NgModule({
   imports: [CommonModule],
 })

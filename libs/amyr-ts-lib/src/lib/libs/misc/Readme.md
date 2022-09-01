@@ -25,5 +25,13 @@ The file list is as follows
 - undo-redo (general undo/redo stack to support arbitrary undo and redo functionality in an application)
 - uuid (a non-crypto unique ID generator)
 
-## Test folder
+## Folders
+
+### models
+
+This folder contains models that provide a somewhat uniform means of treating complex types as primitives that can be easily assigned, updated, and have simple operations (add, subtract, for example) applied to them.
+
+The two initial models are for clock time and fractions.  Clock time is provided in the current release with the fraction model following soon thereafter.
+
+### test
 - test specs for all misc functions and classes
