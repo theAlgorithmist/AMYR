@@ -365,6 +365,8 @@ export class ClockTimeModel
   {
     if (clock === undefined || clock == null) return;
 
+
+
     const s: number    = clock.value;
     const secs: number = (this._seconds-s);
 

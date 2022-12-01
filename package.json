@@ -18,6 +18,7 @@
     "test:function-parser": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/function-parser/test/function-parser.spec.ts",
     "test:libs:fp": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/functional-programming/test/fp.spec.ts",
     "test:libs:misc": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/misc/test/misc.spec.ts",
+    "test:libs:misc:math-types": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/misc/test/math-types.spec.ts",
     "test:libs:optimize": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/optimization/test/optimize.spec.ts",
     "test:libs:sort": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/sorting/test/sort.spec.ts",
     "test:libs:text-vsm": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/text-vsm/test/vsm.spec.ts",

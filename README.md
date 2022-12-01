@@ -1,6 +1,6 @@
 # AMYR
 
-_AMYR_ is a crowdfunded Typescript library intended for developers interested in applications requiring capabily ranging from traditional computer science (data structures and semi-numerical algorithms) to applied mathematics, science, engineering, and business decision analytics.  The library is authored by [Jim Armstrong](https://www.linkedin.com/in/jimarmstrong/).  Mr Armstrong recently retired after nearly 37 years of bridging the gap between applied mathematics and software engineering.  His career began writing assembly-language math libraries for supercomputers.  During this time, he published original research in refereed journals and worked on solution capability for industries including signal processing, finite-element modeling, crash simulation, geophysics, financial modeling, and transportation, just to name a few.
+_AMYR_ is a crowdfunded Typescript library intended for developers interested in applications requiring capability ranging from traditional computer science (data structures and semi-numerical algorithms) to applied mathematics, science, engineering, and business decision analytics.  The library is authored by [Jim Armstrong](https://www.linkedin.com/in/jimarmstrong/).  Mr Armstrong recently retired after nearly 37 years of bridging the gap between applied mathematics and software engineering.  His career began writing assembly-language math libraries for supercomputers.  During this time, he published original research in refereed journals and worked on solution capability for industries including signal processing, finite-element modeling, crash simulation, geophysics, financial modeling, and transportation, just to name a few.
 
 After a 12-year career in the high-performance computing industry, Mr. Armstrong ran a consulting business until 2021 at which time he retired from day-to-day software development.  His development experience spans (RISC) assembler, Basic, Fortran, C, C++, some Java, JavaScript, DHTML, ActionScript, Flash, Flex, Typescript and modern Angular.  In 2004, he began to collect frequently re-used ActionScript code into a formal library for use in client projects.  That library grew until for over ten years until he fully transitioned to modern JavaScript and TypeScript.  The library was ported and enhanced to become the JavaScript Math Toolkit, which was open-sourced in late 2016.  The JavaScript Math Toolkit was enhanced with a great deal of new code and ported to become the TypeScript Math Toolkit (TSMT).  Some of the TSMT code was open-sourced from 2016 to 2021.  During that time, Mr. Armstrong enhanced his private, client-only library to become the Angular Dev Toolkit (ADT).  The ADT contains over 120,000 lines of code of which the TSMT is a subset.
 
@@ -52,7 +52,7 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.17
+Version: 0.0.1
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
