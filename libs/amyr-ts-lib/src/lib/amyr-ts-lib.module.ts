@@ -317,6 +317,17 @@ export { extractVariables } from "./libs/ai/decision-tree/extract-variables";
 export * from '../lib/models/clock-time';
 export { ClockTimeModel } from "./libs/misc/models/clock-time-model";
 
+export { BasicMathType } from "./models/math/basic-math-type";
+
+export { FractionModel } from "./libs/misc/models/fraction-model";
+export { FractionType  } from "./models/math/fraction-type";
+export { floatToFrac   } from "./libs/misc/models/utils/float-to-frac";
+export { strToFrac     } from "./libs/misc/models/utils/str-to-frac";
+export { MathTypeEnum  } from "./models/math/math-type-enum";
+export { RealModel     } from "./libs/misc/models/real-model";
+export { IntegerModel  } from "./libs/misc/models/integer-model";
+export { WholeModel    } from "./libs/misc/models/whole-model";
+
 @NgModule({
   imports: [CommonModule],
 })

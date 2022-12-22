@@ -13,7 +13,6 @@
     "test:ai:astar:heap": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/ai/test/pathfinding/astar-heap.spec.ts",
     "test:ai:decision-tree": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/ai/test/decision-tree/decision-tree.spec.ts",
     "test:ai:fsm": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/ai/test/finite-state-machine/finite-state-machine.spec.ts",
-    "test:ai:fsm": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/ai/test/finite-state-machine/finite-state-machine.spec.ts",
     "test:expression-engine": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/expression-engine/test/expression-engine.spec.ts",
     "test:function-parser": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/function-parser/test/function-parser.spec.ts",
     "test:libs:fp": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/functional-programming/test/fp.spec.ts",

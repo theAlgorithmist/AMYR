@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
+ * Copyright 2022 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -63,7 +63,7 @@ export class FractionModel implements FractionType
  /**
   * Construct a new {FractionType}
   */
-  public FractionType()
+  constructor()
   {
     this.setFraction(0, 0, 1);
   }
@@ -350,7 +350,12 @@ export class FractionModel implements FractionType
    */
   public compare(type: ExtendedMathType, tolerance: number = 0.0000001): boolean
   {
-    return true;
+    // this is a simple, relative comparison that does not take into account extremely small, extremely large, or extreme
+    // differences in magnitude between values.
+    const realType: FractionType = this.toType(type);
+    const value: number          = realType.value as number;
+
+    return Math.abs( (this.value - value) / this.value) <= tolerance;
   }
 
  /**
