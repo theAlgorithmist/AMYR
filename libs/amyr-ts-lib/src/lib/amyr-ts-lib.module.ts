@@ -319,6 +319,7 @@ export { ClockTimeModel } from "./libs/misc/models/clock-time-model";
 
 export { BasicMathType } from "./models/math/basic-math-type";
 
+// math types
 export { FractionModel } from "./libs/misc/models/fraction-model";
 export { FractionType  } from "./models/math/fraction-type";
 export { floatToFrac   } from "./libs/misc/models/utils/float-to-frac";

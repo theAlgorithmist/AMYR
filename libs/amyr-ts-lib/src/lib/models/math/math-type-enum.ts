@@ -1,3 +1,4 @@
+// Current Math Types
 export enum MathTypeEnum
 {
   INTEGER,

@@ -10,7 +10,7 @@ export interface BasicMathType
   // what is the current math type?
   get type(): MathTypeEnum;
 
-  // return a string representation of the current type
+  // return a string representation of the current math type
   toString(): string
 
   // is this type an unknown in an expression?

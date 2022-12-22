@@ -132,8 +132,8 @@ export class WholeModel implements BasicMathType
    */
   public compare(type: ExtendedMathType, tolerance: number = 0.0000001): boolean
   {
-    // this is a simple, relative comparison that does not take into account extremely small, extremely large, or extreme
-    // differences in magnitude between values.
+    // this is a simple, relative comparison that does not take into account extremely small, extremely large,
+    // or extreme differences in magnitude between values.
     let compare = 0;
     if (typeof(type) === 'string')
       compare = parseFloat(type);

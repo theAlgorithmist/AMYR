@@ -33,7 +33,7 @@ This folder contains models that provide a somewhat uniform means of treating co
 
 Models are currently provided for _real_, _integer_, _whole numbers_, and _fractions._ These are collectively referred to as _math types._ in AMYR and all fulfill the contract specified in the _BasicMathType_ interface.
 
-Models can be assigned a value, which can be another model.  For example,
+Models can be assigned a value, which can be another model, as shown below.
 
 ```typescript
   const real: RealModel() = new RealModel();
@@ -65,6 +65,7 @@ Javascript _string_ and _numbers_ can be assigned and used in math type operatio
 
 There is currently a model for clock time and it may be incorporated into the _BasicMathType_ framework in a future release.
 
+Math Types may be used in equations.  A specific type may be specified as the unknown in an equation.  Fraction parts such as numerator or denominator may be specified as unknown quantities in an equation.
 Refer to the specs in _math-types-spec.ts_ for extensive and detailed usage examples.
 
 ### test

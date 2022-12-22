@@ -110,7 +110,7 @@ export class FractionModel implements FractionType
       }
     }
 
-    if( this._isMixed )
+    if (this._isMixed)
     {
       if( this._whole != 0 )
       {

@@ -1,5 +1,6 @@
 import { BasicMathType } from "./basic-math-type";
 
+// Fraction Type
 export interface FractionType extends BasicMathType
 {
   // is this a mixed number?

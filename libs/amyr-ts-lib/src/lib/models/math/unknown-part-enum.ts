@@ -1,3 +1,4 @@
+// Unknown part of a fraction
 export enum UnknownPartEnum
 {
   NUMERATOR   = "NUM",

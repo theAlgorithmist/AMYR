@@ -262,8 +262,9 @@ export class IntegerModel implements BasicMathType
   }
 
   /**
-   * Overwrite the current integer model with the quotient of it and another type.  It is the caller' responsibility to
-   * consider consequences of division by extremely small numbers and ratios of extremely small numbers.
+   * Overwrite the current integer model with the quotient of this model and another type.  It is the caller's
+   * responsibility to consider consequences of division by extremely small numbers and ratios of extremely small
+   * numbers.
    *
    * @param {ExtendedMathType} input Divisor type
    */

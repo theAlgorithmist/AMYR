@@ -254,7 +254,7 @@ export class RealModel implements BasicMathType
   }
 
   /**
-   * Overwrite the current real model with the quotient of it and another type.  It is the caller' responsibility to
+   * Overwrite the current real model with the quotient of it and another type.  It is the caller's responsibility to
    * consider consequences of division by extremely small numbers and ratios of extremely small numbers.
    *
    * @param {ExtendedMathType} input Divisor type
