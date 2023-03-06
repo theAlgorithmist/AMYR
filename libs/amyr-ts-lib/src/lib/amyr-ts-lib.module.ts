@@ -329,6 +329,9 @@ export { RealModel     } from "./libs/misc/models/real-model";
 export { IntegerModel  } from "./libs/misc/models/integer-model";
 export { WholeModel    } from "./libs/misc/models/whole-model";
 
+// paging calculator
+export { PagingCalculator } from "./libs/paging/paging-calculator";
+
 @NgModule({
   imports: [CommonModule],
 })

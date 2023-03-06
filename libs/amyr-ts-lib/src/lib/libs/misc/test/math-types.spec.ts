@@ -1005,7 +1005,7 @@ describe('Fraction Model', () => {
   });
 
 
-  it('Divide into by zero results in no change to currentfraction', () =>
+  it('Divide into by zero results in no change to current fraction', () =>
   {
     const frac: FractionModel = new FractionModel();
     frac.setFraction(0, 1, 3);
@@ -2239,7 +2239,7 @@ describe('Whole Model', () =>
     expect(whole.value).toEqual(0);
   });
 
-  it('fraction model can be assinged to whole model', () => {
+  it('fraction model can be assigned to whole model', () => {
     const whole: WholeModel     = new WholeModel();
     const frac: FractionModel = new FractionModel();
 
