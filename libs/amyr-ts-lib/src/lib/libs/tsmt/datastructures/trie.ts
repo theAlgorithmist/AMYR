@@ -1,6 +1,6 @@
 /* eslint-disable no-constant-condition */
-/** 
- * Copyright 2021 Jim Armstrong
+/**
+ * Copyright 2021 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,7 +74,7 @@ DEFAULT_ALPHABET[WORD_TERMINATOR] = 1;
  * Note that this implementation most closely follows reference [2]
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 

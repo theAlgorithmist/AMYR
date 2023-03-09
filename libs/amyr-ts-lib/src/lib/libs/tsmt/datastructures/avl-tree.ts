@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  */
 
 /**
- * Typescript Math Toolkit: AVL Tree.  Note that the use of a 0/1 integer variable to represent left/right directions and comparison results is an old trick, 
+ * Typescript Math Toolkit: AVL Tree.  Note that the use of a 0/1 integer variable to represent left/right directions and comparison results is an old trick,
  * so don't think it came from me :)  A good modern explanation can be found at http://www.eternallyconfuzzled.com/tuts/datastructures/jsw_tut_avl.aspx
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -72,9 +72,9 @@
 
   /**
    * Create a new tree from a sequential list of values
-   * 
+   *
    * @param {Array<T>} values Array of raw values
-   * 
+   *
    * @return nothing
    */
    public fromArray(values: Array<T>): void
@@ -100,12 +100,12 @@
   /**
    * Clear the current tree (all node references are nulled, the tree root is nulled, and tree size set to zero)
    */
-   public clear() 
+   public clear()
    {
-     if (this._size > 0) 
+     if (this._size > 0)
      {
        this.__clear(this._root);
-       
+
        this._size = 0;
        this._root = null;
      }
@@ -113,20 +113,20 @@
 
    protected __clear(node: TSMT$BTreeNode<T> | null): void
    {
-     if (node != null) 
+     if (node != null)
      {
        this.__clear(node.left);
        this.__clear(node.right);
 
        node = null;
-     }   
+     }
    }
 
   /**
    * Insert a node into the tree by value
-   * 
+   *
    * @param {T} value Node data
-   * 
+   *
    * @param {string} id Node id
    */
    public insertByValue(value: T, id: string): void
@@ -135,14 +135,14 @@
      {
        const node: TSMT$BTreeNode<T> = new TSMT$BTreeNode<T>(value);
        node.id                       = id;
-       
+
        this.insert(node);
      }
    }
 
   /**
-   * Insert a node into the tree; note that all nodes inserted into the tree should be unique 
-   * 
+   * Insert a node into the tree; note that all nodes inserted into the tree should be unique
+   *
    * @param node {TSMT$BTreenode<T>} Node to be inserted
    */
    public insert(node: TSMT$BTreeNode<T>): void
@@ -209,7 +209,7 @@
 
   /**
    * Delete a node into the tree by value. If the node is found, the node corresponding to the supplied value is deleted from the tree and the tree is rebalanced
-   * 
+   *
    * @param {T} value Node value
    */
    public deleteByValue(value: T): void
@@ -221,11 +221,11 @@
 
   /**
    * Delete a node from the tree. If found, the node is deleted and the tree is rebalanced.  Otherwise, no action is taken.
-   * 
+   *
    * If you maintain outside references to nodes, information in a node may no longer be valid after a delete; it is important to traverse nodes
    * directly from the tree to obtain information.  When performing multiple deletes, use find() to locate the current tree node with a particular
    * value, then delete that node.
-   * 
+   *
    * @param {TSMT$BTreeNode<T>} node Node to delete from the tree
    */
    public delete(node: TSMT$BTreeNode<T> | null): void
@@ -267,7 +267,7 @@
        const dir: number = n.left == null ? 1 : 0;
 
        // adjust the parent
-       if (current != 0) 
+       if (current != 0)
          path[current - 1].setChild(direction[current - 1], n.getChild(dir) as TSMT$BTreeNode<T>);
        else
          this._root = n.getChild(dir);
@@ -286,7 +286,7 @@
        {
          direction[current] = 0;
          path[current++]    = next;
-         
+
          next = next.left;
        }
 
@@ -299,12 +299,12 @@
 
        path[current - 1].setChild(dir, next.right as TSMT$BTreeNode<T>);
 
-       next = null; 
+       next = null;
      }
 
      this._size--;
 
-     // traverse up the search path 
+     // traverse up the search path
      let finished = false;
      let pair: NodeFinished<T>;
 
@@ -350,7 +350,7 @@
 
         root = this.doubleRotation(root, dir) as TSMT$BTreeNode<T>;
       }
-      else 
+      else
       {
         root.balance = -bal;
         n.balance    = bal;
@@ -362,7 +362,7 @@
       return {node: root, finished: completed};
    }
 
-  /** 
+  /**
    * Return reference to node with minimum value in a subtree, or {null} if input is {null} or {undefined}.
    *
    * @param {TSMT$BTreeNode<T>} root Optional root node for the search - defaults to tree root
@@ -392,7 +392,7 @@
 
      while (root.right != null)
        root = root.right;
-            
+
      return root;
    }
 
@@ -400,7 +400,7 @@
    * Find an item with a specified value in a subtree or return {null} if not found
    *
    * @param {T} x search value
-   * 
+   *
    * @param {TSMT$BTreeNode<T>} root optional root node for the search - defaults to tree root
    */
    public find(x: T, root?: TSMT$BTreeNode<T> | null): TSMT$BTreeNode<T> | null
@@ -414,7 +414,7 @@
      while (root != null)
      {
        dir = root.compareTo(node);
-     
+
        if (dir == -1)
          root = root.right;
        else if (dir == 1)
@@ -428,16 +428,16 @@
 
  /**
    * Perform a single rotation in the specified direction
-   * 
+   *
    * @param {TSMT$BTreeNode<T>} node Root node for the rotation
-   * 
+   *
    * @param {number} dir Direction (0 - left, 1 - right)
    */
   public singleRotation(node: TSMT$BTreeNode<T>, dir: number): TSMT$BTreeNode<T> | null
   {
     if (node == null || (dir != TSMT$NODE_DIRECTION.LEFT && dir != TSMT$NODE_DIRECTION.RIGHT)) return null;
 
-    // reverse of direction 
+    // reverse of direction
     const reverse: number = dir == 0 ? 1 : 0;
 
     // and, the rotation ...
@@ -451,22 +451,22 @@
 
  /**
   * Perform a double rotation in the specified direction
-  * 
+  *
   * @param {TSMT$BTreeNode<T>} node Root node for the rotation
-  * 
+  *
   * @param {number} dir Direction (0 - left, 1 - right)
   */
   public doubleRotation(node: TSMT$BTreeNode<T>, dir: number): TSMT$BTreeNode<T> | null
   {
     if (node == null || (dir != TSMT$NODE_DIRECTION.LEFT && dir != TSMT$NODE_DIRECTION.RIGHT)) return null;
 
-    // reverse of direction 
+    // reverse of direction
     const reverse: number = dir == 0 ? 1 : 0;
 
     // this process is easier to follow if each rotation is done one at a time
     const r: TSMT$BTreeNode<T> = node.getChild(reverse) as TSMT$BTreeNode<T>;
     let s: TSMT$BTreeNode<T>   = r.getChild(dir) as TSMT$BTreeNode<T>;
-    
+
     // subtree
     r.setChild(dir, s.getChild(reverse) as TSMT$BTreeNode<T>);
     s.setChild(reverse, r);
@@ -480,7 +480,7 @@
     s.parent = null;
 
     return s;
-  }   
+  }
 
    // adjust balance factors after a double rotation - heavily influenced by above reference
    protected __adjustDoubleBalance(root: TSMT$BTreeNode<T>, dir: number, bal: number): void
@@ -506,7 +506,7 @@
      }
 
       nn.balance = 0;
-   } 
+   }
 
    // perform a node insertion with rotation and balance-factor updates
    protected __insertWithBalance(root: TSMT$BTreeNode<T>, dir: number): TSMT$BTreeNode<T>

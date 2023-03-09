@@ -16,6 +16,7 @@
     "test:libs:expression-engine": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/expression-engine/test/expression-engine.spec.ts",
     "test:libs:function-parser": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/function-parser/test/function-parser.spec.ts",
     "test:libs:fp": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/functional-programming/test/fp.spec.ts",
+    "test:libs:item-allocation": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/item-allocation/test/allocation.spec.ts",
     "test:libs:misc": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/misc/test/misc.spec.ts",
     "test:libs:misc:math-types": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/misc/test/math-types.spec.ts",
     "test:libs:optimize": "npx jest -i ./libs/amyr-ts-lib/src/lib/libs/optimization/test/optimize.spec.ts",

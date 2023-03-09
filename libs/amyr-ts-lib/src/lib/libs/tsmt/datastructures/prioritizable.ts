@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
  * Typescript Math Toolkit: Prioritizable item
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 import {IPrioritizable} from './iprioritizable';
@@ -27,7 +27,7 @@ export class Prioritizable<T> implements IPrioritizable<T>
 {
   protected _priority: number;
   protected _timestamp: number;
-  
+
   protected _data: T | null;
 
   constructor( TConstructor?: { new (): T } )

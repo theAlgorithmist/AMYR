@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
  * Typescript Math Toolkit: Graph consisting of interconnections between TSMT$GraphNode<T> instances.
  *
  * @author Jim Armstrong (www.algorithmist.net), inspired by polygonal ds library
- * 
+ *
  * @version 1.1 (Added DFS/BFS)
  */
 

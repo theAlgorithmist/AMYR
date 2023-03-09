@@ -52,7 +52,7 @@ Each folder has its own Readme file that describes currently available content. 
 
 The current layout of _AMYR_ is as follows:
 
-Version: 0.0.19 (paging calculator)
+Version: 0.0.20 (item allocation)
 
 * **[core](/libs/amyr-ts-lib/src/lib/core#readme) (core capability for the entire library) - P**
 * dataviz (data visualization support libraries) - E
@@ -63,7 +63,7 @@ Version: 0.0.19 (paging calculator)
     * **expression-engine (evaluate general expressions in infix notation - return number/string/boolean) - C**
     * function-graph (function graphing engine) - E
     * **function-parser (parse and evaluate functions of multiple variables in infix notation) - C**
-    * item-allocation (solution of continuous and 0-1 knapsack problesm) -E
+    * **item-allocation (solution of continuous and 0-1 knapsack problems) - C**
     * **[functional-programming](/libs/amyr-ts-lib/src/lib/libs/functional-programming#readme) (compact, pure functions for use in FP applications) - P**
     * kinematics (2D forward/inverse kinematics library) - E
     * lazy-load (lazy-load JS and CSS files) - E

@@ -1,5 +1,5 @@
 ﻿/**
- * Copyright 2017 Jim Armstrong (www.algorithmist.net)
+ * Copyright 2017 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

@@ -1,5 +1,5 @@
-﻿/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+﻿/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,10 +15,10 @@
  */
 
 /**
- * Typescript Math Toolkit: Minimal implementation of a binary tree node. 
+ * Typescript Math Toolkit: Minimal implementation of a binary tree node.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -49,7 +49,7 @@ export class TSMT$BTreeNode<T>
 		  this._data   = d;
 
     this.id           = "";
-		this._parent      = null; 
+		this._parent      = null;
     this._children    = [null, null];  // fixed-length array of two elements
     this._children[0] = null;
     this._children[1] = null;
@@ -81,7 +81,7 @@ export class TSMT$BTreeNode<T>
     public set data(value: T | null)
     {
       if (value === null || value == undefined) return;
-  
+
       this._data = value;
     }
 
@@ -101,7 +101,7 @@ export class TSMT$BTreeNode<T>
   public set balance(value: number)
   {
     this._balance = (!isNaN(value) && isFinite(value)) ? Math.floor(value) : this._balance;
-  }  
+  }
 
  /**
   * Access a direct reference to this node's parent
@@ -115,12 +115,12 @@ export class TSMT$BTreeNode<T>
   * Assign this node's parent
   *
   * @param node {TSMT$BTreeNode<T> | null} Reference to this node's new parent
-  */	
+  */
   public set parent(node: TSMT$BTreeNode<T> | null)
   {
     if ((node != undefined && node instanceof TSMT$BTreeNode) || node == null) this._parent = node;
   }
-  
+
  /**
   * Access a direct reference to this node's left child
   */
@@ -139,7 +139,7 @@ export class TSMT$BTreeNode<T>
     if ((node != undefined && node instanceof TSMT$BTreeNode) || node == null)
     {
       this._children[0] = node;
-  
+
       if (node != null) node.parent = this;
     }
   }
@@ -165,7 +165,7 @@ export class TSMT$BTreeNode<T>
 
       if (node != null) node.parent  = this;
     }
-  }  
+  }
 
  /**
   * Return the numerical value of this node.  The current implementation is suitable for numeric data; this method is usually overridden for other
@@ -232,7 +232,7 @@ export class TSMT$BTreeNode<T>
   }
 
  /**
-  * Compare two binary tree nodes, generally for the purpose of determining a traversal direction.  Returns 0 if the current node value is less 
+  * Compare two binary tree nodes, generally for the purpose of determining a traversal direction.  Returns 0 if the current node value is less
   * than the input node value and 1 otherwise, which doubles as a search direction
   *
   * @param node {T} Reference to an input node for comparison
@@ -246,8 +246,8 @@ export class TSMT$BTreeNode<T>
   }
 
  /**
-  * Compare two binary tree nodes for less than, equal to, or greater than in value.  Returns -1 if the current node value is less than the input node, 
-  * 0 if equal, and and 1 if greater; note that nodes with numerical values may be require and approx-equal comparison which could be implemented in a 
+  * Compare two binary tree nodes for less than, equal to, or greater than in value.  Returns -1 if the current node value is less than the input node,
+  * 0 if equal, and and 1 if greater; note that nodes with numerical values may be require and approx-equal comparison which could be implemented in a
   * future version.
   *
   * @param node {T} Reference to an input node for comparison

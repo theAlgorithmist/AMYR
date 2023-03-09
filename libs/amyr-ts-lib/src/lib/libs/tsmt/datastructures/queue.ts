@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,14 +18,14 @@
  * Typescript Math Toolkit: Minimal implementation of a FIFO queue of generic items.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
  export class TSMT$Queue<T>
  {
    protected _queue: Array<T>;                // The actual queue
-   
+
  /**
   * Construct a new queue of the supplied type
   */
@@ -44,7 +44,7 @@
 
   /**
    * Initialize the queue from an existing array
-   * 
+   *
    * @param {Array<T>} items Array of queue items
    */
    public fromArray(items: Array<T>): void
@@ -71,7 +71,7 @@
    }
 
   /**
-   * Remove item from the queue.  Returns a direct reference to the next queue item  or null for an empty queue.  
+   * Remove item from the queue.  Returns a direct reference to the next queue item  or null for an empty queue.
    * The item is permanently removed from the queue.
    */
    public dequeue(): T | null

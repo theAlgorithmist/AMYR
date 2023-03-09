@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@
  * imposed across the entire tree.  Ordering is set to true by default.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -83,11 +83,11 @@
      {
        this._root         = node;
        this._root.ordered = this._ordered;
- 
+
        // tree size is now same as root node size
        this._size = node.size;
      }
-   }   
+   }
 
    /**
     * Access whether or not direct tree children maintain ordered child insertion
@@ -107,7 +107,7 @@
     {
       this._ordered = value === true ? true : false;
     }
-    
+
    /**
     * Access the height of a this tree
     *
@@ -159,7 +159,7 @@
    */
    public clear(): void
    {
-     if (this._size > 0) 
+     if (this._size > 0)
      {
        if (this._root != null)
        {
@@ -174,7 +174,7 @@
    }
 
   /**
-   * Insert a node into the tree by id & value as a child of the specified parent.  Returns a reference to the newly created node or 
+   * Insert a node into the tree by id & value as a child of the specified parent.  Returns a reference to the newly created node or
    * {null} if inputs are invalid.  If the parent is not provided and the root has already been assigned, this method returns {null}.
    *
    * @param {string} id Node id
@@ -219,10 +219,10 @@
    }
 
   /**
-   * Delete a node into the tree with the specified id.  If node is found in the tree with the specified id, that node 
-   * (and by extension, its subtree) is deleted from the tree.  That node and all children are automatically cleared and 
+   * Delete a node into the tree with the specified id.  If node is found in the tree with the specified id, that node
+   * (and by extension, its subtree) is deleted from the tree.  That node and all children are automatically cleared and
    * prepared for garbage collection.
-   * 
+   *
    * @param {string} id Node id
    */
    public delete(id: string): void
@@ -255,7 +255,7 @@
    * Find an item with a specified id in a subtree
    *
    * @param id: string id
-   * 
+   *
    * @param root: TSMT$BTreeNode<T> optional root node for the search - defaults to tree root
    *
    * @return TSMT$BTreeNode<T> Node with the specified value or null if not found

@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,11 +18,11 @@
  * Typescript Math Toolkit: Minimal implementation of a stack of generic items.  Supports FIFO and LIFO insertion/removal.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
- export enum STACK_TYPE 
+ export enum STACK_TYPE
  {
 	 'FIFO',
    'LIFO'
@@ -32,11 +32,11 @@
  {
    protected _stack: Array<T>;                // The actual stack
    protected _access: number;                 // how data is accessed from the stack, i.e. FIFO or LIFO
-   
+
  /**
   * Construct a new Stack of the supplied type
-  * 
-  * @return Nothing Constructs an array of the supplied data type and sets acccess to FIFO 
+  *
+  * @return Nothing Constructs an array of the supplied data type and sets acccess to FIFO
   */
   constructor( )
   {
@@ -62,7 +62,7 @@
 
   /**
 	 * Assign the current stack access mode
-	 * 
+	 *
 	 * @param {number} mode Access mode, either {STACK_TYPE.FIFO} or {STACK_TYPE.LIFO}
 	 */
 	 public set access(mode: number)
@@ -72,7 +72,7 @@
 
   /**
    * Initialize the stack from an existing array
-   * 
+   *
    * @param {Array<T>} items Array of stack items
    */
    public fromArray(items: Array<T>): void
@@ -119,7 +119,7 @@
    }
 
   /**
-   * Pop the next item off the stack.  This call returns a direct reference to the next stack item, based on current access type (FIFO or LIFO), or null for an 
+   * Pop the next item off the stack.  This call returns a direct reference to the next stack item, based on current access type (FIFO or LIFO), or null for an
    * empty stack.  The item is permanently removed from the stack.
    */
    public pop(): T | null
@@ -139,7 +139,7 @@
    }
 
   /**
-   * Reverse the stack.  There is no action for an empty stack; otherwise, the order of the stack is reversed.  This does not, however, affect 
+   * Reverse the stack.  There is no action for an empty stack; otherwise, the order of the stack is reversed.  This does not, however, affect
    * future insertions and deletions from the stack.
    */
    public revsere(): void

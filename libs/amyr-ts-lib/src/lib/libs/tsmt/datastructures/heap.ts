@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@
  * interface).  An empty Object is created for a node's data if none is provided in an insert operation.
  *
  * @author Jim Armstrong (www.algorithmist.net)
- * 
+ *
  * @version 1.0
  */
 
@@ -155,7 +155,7 @@ export class TSMT$Heap
   }
 
  /**
-  * Examine the root value of the heap without modifying the internal structure.  Returns numerical value of root node, which will be minimum 
+  * Examine the root value of the heap without modifying the internal structure.  Returns numerical value of root node, which will be minimum
   * value for a min-heap and maximum value for a max-heap
   */
   public peek(): number
@@ -194,7 +194,7 @@ export class TSMT$Heap
   }
 
  /**
-  * Remove a node from the heap based on an input value.  The node with the specified value is searched for (within tolerance).  If found, 
+  * Remove a node from the heap based on an input value.  The node with the specified value is searched for (within tolerance).  If found,
   * that node is deleted and the internal structure is heapified.  Because of the search, the operation is O(n).  Delete is
   * expected to be an infrequent operation, otherwise another structure is likely a better application fit.
   *

@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
  * a classic binary tree is balanced for a particular situation.  It is largely provided for experimental and information-gathering applications.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -58,7 +58,7 @@
 
   /**
    * Insert a node into the tree
-   * 
+   *
    * @param node {TSMT$BTreenode<T>} Reference to node to be inserted
    */
    public insert(node: TSMT$BTreeNode<T>): void
@@ -95,7 +95,7 @@
                (parent as TSMT$BTreeNode<T>).setChild(dir, node);
 
                this.__adjustBalancePostInsert(node, dir);
-               
+
                finished = true;
                this._size++;
              }
@@ -134,7 +134,7 @@
 
   /**
    * Create a new tree from a sequential list of values
-   * 
+   *
    * @param values {Array<T>} Array of raw values
    */
    public fromArray(values: Array<T>): void
@@ -160,12 +160,12 @@
   /**
    * Clear the current tree  (all node references are nulled, the tree root is nulled, and tree size set to zero)
    */
-   public clear() 
+   public clear()
    {
-     if (this._size > 0) 
+     if (this._size > 0)
      {
        this.__clear(this._root);
-       
+
        this._size = 0;
        this._root = null;
      }
@@ -173,12 +173,12 @@
 
    protected __clear(node: TSMT$BTreeNode<T> | null): void
    {
-     if (node != null) 
+     if (node != null)
      {
        this.__clear(node.left);
        this.__clear(node.right);
 
        node = null;
-     }   
+     }
    }
  }

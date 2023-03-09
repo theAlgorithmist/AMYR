@@ -1,5 +1,5 @@
-/** 
- * Copyright 2016 Jim Armstrong (www.algorithmist.net)
+/**
+ * Copyright 2016 Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,10 +15,10 @@
  */
 
 /**
- * Typescript Math Toolkit: Minimal implementation of a priority queue. 
+ * Typescript Math Toolkit: Minimal implementation of a priority queue.
  *
  * @author Jim Armstrong (https://www.linkedin.com/in/jimarmstrong/)
- * 
+ *
  * @version 1.0
  */
 
@@ -67,11 +67,11 @@ export class TSMT$PriorityQueue<T>
 
  /**
   * Assign the sort-delay parameter
-  * 
+  *
   * @param value {boolean} True if sorting is delayed while adding items to the priority queue (for performance reasons)
   */
   public set delay(value: boolean)
-  {     
+  {
     this._delay = value === true ? true : false;
   }
 
@@ -84,9 +84,9 @@ export class TSMT$PriorityQueue<T>
 	}
 
  /**
-  * Assign the sort criteria for this priority queue.  The priority queue is sorted according to the first criteria, then equal values are sorted relative 
+  * Assign the sort criteria for this priority queue.  The priority queue is sorted according to the first criteria, then equal values are sorted relative
   * to the second criteria, and so on.
-  * 
+  *
   * @param crietria {Array<SortType>} Each element of the array must correspond to a property {PQUEUE_SORT_ENUM}
   */
   public set sortCriteria(criteria: Array<SortType>)
@@ -107,11 +107,11 @@ export class TSMT$PriorityQueue<T>
         if (valid) this._sortCriteria = criteria.slice();
 		  }
 	  }
-  }  
+  }
 
  /**
   * Assign data to the queue
-  * 
+  *
   * @param data {Array< Prioritizable<T> >} Array of Prioritizable items of specified type
   */
   public set data(value: Array< Prioritizable<T> > )
@@ -120,9 +120,9 @@ export class TSMT$PriorityQueue<T>
   }
 
  /**
-  * Add an item to the priority queue at the end of queue and the queue is automatically re-sorted if the sort-delay is false.  Otherwise, 
+  * Add an item to the priority queue at the end of queue and the queue is automatically re-sorted if the sort-delay is false.  Otherwise,
   * the queue is sorted according the currently assigned sort criteria
-  * 
+  *
   * @param item {Prioritizable<T>} Item to add to the priority queue
   */
   public addItem(item: Prioritizable<T>): void
@@ -131,7 +131,7 @@ export class TSMT$PriorityQueue<T>
 	  if (item)
     {
       this._queue.push(item);
-			    
+
       if (!this._delay)
         this.__sort();
       else
@@ -141,13 +141,13 @@ export class TSMT$PriorityQueue<T>
 
  /**
   * Return the first and highest priority item.  The item is permanently removed from the priority queue
-  */		
-  public removeFirstItem(): Prioritizable<T> 
+  */
+  public removeFirstItem(): Prioritizable<T>
 	{
     if (this._invalidated) this.__sort();
-        
+
     return this._queue.shift() as Prioritizable<T>;
-  }  
+  }
 
  /**
   * Return the last and lowest priority item
@@ -155,28 +155,28 @@ export class TSMT$PriorityQueue<T>
   public removeLastItem(): Prioritizable<T>
   {
    if (this._invalidated) this.__sort();
-	        
+
    return this._queue.pop() as Prioritizable<T>;
   }
 
  /**
   * Remove the specified item from the priority queue or take no action if the item does not exist.  The queue is resorted unless the delay parameter is false.
   * This allows multiple removals to be processed faster and only perform a single sort, JIT.
-  * 
+  *
   * @param item {Prioritizable<T>} Item to be removed
   */
   public removeItem(item: Prioritizable<T>): boolean
   {
     if (item == undefined || item == null) return false;
-        
+
     const index: number = this.__getItemIndex(item);
-			
+
     if (index != -1)
     {
       this._queue.splice(index, 1);
 	    return true;
     }
-			  
+
     return false;
   }
 
@@ -190,7 +190,7 @@ export class TSMT$PriorityQueue<T>
     this._invalidated         = true;
 	  this._delay               = false;
   }
-	 
+
 	// internal method - get the index corresponding to the input item
 	protected __getItemIndex(item: Prioritizable<T>): number
   {
@@ -201,7 +201,7 @@ export class TSMT$PriorityQueue<T>
 	  {
 	    if (this._queue[i] === item) return i;
     }
-        
+
     return -1;
   }
 
@@ -211,8 +211,8 @@ export class TSMT$PriorityQueue<T>
 		if (this._queue.length < 2) return;
 
     if (this._sortCriteria.length == 0) this._sortCriteria = this._defaultCriteria.slice();
-      
-    // sort-on multiple criteria       
+
+    // sort-on multiple criteria
     const args: Array<SortType> = this._sortCriteria.slice();
 
     this._queue.sort
@@ -234,5 +234,5 @@ export class TSMT$PriorityQueue<T>
   protected __isSortType(value: string, keys: Array<string>): value is SortType
   {
     return keys.indexOf(value) != -1;
-	}  
+	}
 }

@@ -332,6 +332,15 @@ export { WholeModel    } from "./libs/misc/models/whole-model";
 // paging calculator
 export { PagingCalculator } from "./libs/paging/paging-calculator";
 
+// item allocation
+export { AllocatableItem           } from "./libs/item-allocation/allocatable-item";
+export { ItemAllocation            } from "./libs/item-allocation/item-allocation";
+export { AllocatableItemProps      } from "./models/allocatable-item-props";
+export { AllocatableItemStrategy   } from "./models/allocatable-item-strategy";
+export { DefaultAllocationStrategy } from "./libs/item-allocation/default-allocation-strategy";
+export { Knapsack                  } from "./libs/item-allocation/knapsack";
+export { matrixFactory             } from "./libs/item-allocation/matrix-factory";
+
 @NgModule({
   imports: [CommonModule],
 })
